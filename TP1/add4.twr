@@ -1,0 +1,78 @@
+--------------------------------------------------------------------------------
+Release 12.4 Trace  (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml add4.twx add4.ncd -o add4.twr add4.pcf -ucf add4.ucf
+
+Design file:              add4.ncd
+Physical constraint file: add4.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.15 2010-12-02)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |SUM<0>         |    7.516|
+A<0>           |SUM<1>         |    7.686|
+A<0>           |SUM<2>         |    7.296|
+A<0>           |SUM<3>         |    8.056|
+A<0>           |SUM<4>         |    7.562|
+A<1>           |SUM<1>         |    7.792|
+A<1>           |SUM<2>         |    7.284|
+A<1>           |SUM<3>         |    7.976|
+A<1>           |SUM<4>         |    7.482|
+A<2>           |SUM<2>         |    7.209|
+A<2>           |SUM<3>         |    7.904|
+A<2>           |SUM<4>         |    7.410|
+A<3>           |SUM<3>         |    7.233|
+A<3>           |SUM<4>         |    6.739|
+B<0>           |SUM<0>         |    8.202|
+B<0>           |SUM<1>         |    8.372|
+B<0>           |SUM<2>         |    7.553|
+B<0>           |SUM<3>         |    7.488|
+B<0>           |SUM<4>         |    6.994|
+B<1>           |SUM<1>         |    8.171|
+B<1>           |SUM<2>         |    7.732|
+B<1>           |SUM<3>         |    7.963|
+B<1>           |SUM<4>         |    7.469|
+B<2>           |SUM<2>         |    7.201|
+B<2>           |SUM<3>         |    7.649|
+B<2>           |SUM<4>         |    7.155|
+B<3>           |SUM<3>         |    7.684|
+B<3>           |SUM<4>         |    7.190|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Sep 16 11:49:20 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 287 MB
+
+
+

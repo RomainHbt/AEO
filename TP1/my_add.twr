@@ -1,0 +1,79 @@
+--------------------------------------------------------------------------------
+Release 12.4 Trace  (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml my_add.twx my_add.ncd -o my_add.twr my_add.pcf -ucf
+Nexys3.ucf
+
+Design file:              my_add.ncd
+Physical constraint file: my_add.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.15 2010-12-02)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+switches<0>    |led<0>         |    7.516|
+switches<0>    |led<1>         |    7.661|
+switches<0>    |led<2>         |    7.296|
+switches<0>    |led<3>         |    8.056|
+switches<0>    |led<4>         |    7.562|
+switches<1>    |led<1>         |    7.767|
+switches<1>    |led<2>         |    7.284|
+switches<1>    |led<3>         |    7.976|
+switches<1>    |led<4>         |    7.482|
+switches<2>    |led<2>         |    7.209|
+switches<2>    |led<3>         |    7.904|
+switches<2>    |led<4>         |    7.410|
+switches<3>    |led<3>         |    7.233|
+switches<3>    |led<4>         |    6.739|
+switches<4>    |led<0>         |    8.202|
+switches<4>    |led<1>         |    8.347|
+switches<4>    |led<2>         |    7.553|
+switches<4>    |led<3>         |    7.488|
+switches<4>    |led<4>         |    6.994|
+switches<5>    |led<1>         |    8.146|
+switches<5>    |led<2>         |    7.732|
+switches<5>    |led<3>         |    7.963|
+switches<5>    |led<4>         |    7.469|
+switches<6>    |led<2>         |    7.201|
+switches<6>    |led<3>         |    7.649|
+switches<6>    |led<4>         |    7.155|
+switches<7>    |led<3>         |    7.684|
+switches<7>    |led<4>         |    7.190|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Sep 16 12:17:51 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 287 MB
+
+
+
