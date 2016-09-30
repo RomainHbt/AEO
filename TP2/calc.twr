@@ -1,0 +1,158 @@
+--------------------------------------------------------------------------------
+Release 12.4 Trace  (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml calc.twx calc.ncd -o calc.twr calc.pcf -ucf calc.ucf
+
+Design file:              calc.ncd
+Physical constraint file: calc.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.15 2010-12-02)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+btn<0>         |led<0>         |   11.675|
+btn<0>         |led<1>         |   12.567|
+btn<0>         |led<2>         |   12.376|
+btn<0>         |led<3>         |   12.412|
+btn<0>         |led<4>         |   11.336|
+btn<0>         |sevenseg<0>    |   12.665|
+btn<0>         |sevenseg<1>    |   12.492|
+btn<0>         |sevenseg<2>    |   13.043|
+btn<0>         |sevenseg<3>    |   13.097|
+btn<0>         |sevenseg<4>    |   12.908|
+btn<0>         |sevenseg<5>    |   12.981|
+btn<0>         |sevenseg<6>    |   12.881|
+btn<1>         |led<0>         |   10.832|
+btn<1>         |led<1>         |   11.455|
+btn<1>         |led<2>         |   10.898|
+btn<1>         |led<3>         |   11.673|
+btn<1>         |led<4>         |   10.597|
+btn<1>         |sevenseg<0>    |   11.417|
+btn<1>         |sevenseg<1>    |   11.604|
+btn<1>         |sevenseg<2>    |   11.692|
+btn<1>         |sevenseg<3>    |   11.849|
+btn<1>         |sevenseg<4>    |   12.169|
+btn<1>         |sevenseg<5>    |   11.630|
+btn<1>         |sevenseg<6>    |   12.142|
+switches<0>    |led<0>         |    8.808|
+switches<0>    |led<1>         |    8.877|
+switches<0>    |led<2>         |    8.683|
+switches<0>    |led<3>         |    8.889|
+switches<0>    |led<4>         |    7.813|
+switches<0>    |sevenseg<0>    |    9.179|
+switches<0>    |sevenseg<1>    |    9.139|
+switches<0>    |sevenseg<2>    |    9.569|
+switches<0>    |sevenseg<3>    |    9.611|
+switches<0>    |sevenseg<4>    |    9.766|
+switches<0>    |sevenseg<5>    |    9.507|
+switches<0>    |sevenseg<6>    |    9.739|
+switches<1>    |led<1>         |    9.081|
+switches<1>    |led<2>         |    8.644|
+switches<1>    |led<3>         |    9.227|
+switches<1>    |led<4>         |    8.151|
+switches<1>    |sevenseg<0>    |    9.043|
+switches<1>    |sevenseg<1>    |    9.158|
+switches<1>    |sevenseg<2>    |    9.311|
+switches<1>    |sevenseg<3>    |    9.475|
+switches<1>    |sevenseg<4>    |    9.723|
+switches<1>    |sevenseg<5>    |    9.249|
+switches<1>    |sevenseg<6>    |    9.696|
+switches<2>    |led<2>         |    9.366|
+switches<2>    |led<3>         |    8.856|
+switches<2>    |led<4>         |    7.780|
+switches<2>    |sevenseg<0>    |    9.655|
+switches<2>    |sevenseg<1>    |    9.482|
+switches<2>    |sevenseg<2>    |   10.033|
+switches<2>    |sevenseg<3>    |   10.087|
+switches<2>    |sevenseg<4>    |    9.897|
+switches<2>    |sevenseg<5>    |    9.971|
+switches<2>    |sevenseg<6>    |    9.870|
+switches<3>    |led<3>         |    8.696|
+switches<3>    |led<4>         |    7.620|
+switches<3>    |sevenseg<0>    |    8.304|
+switches<3>    |sevenseg<1>    |    8.627|
+switches<3>    |sevenseg<2>    |    8.715|
+switches<3>    |sevenseg<3>    |    8.736|
+switches<3>    |sevenseg<4>    |    9.192|
+switches<3>    |sevenseg<5>    |    8.653|
+switches<3>    |sevenseg<6>    |    9.165|
+switches<4>    |led<0>         |    9.020|
+switches<4>    |led<1>         |    9.248|
+switches<4>    |led<2>         |    9.236|
+switches<4>    |led<3>         |    9.675|
+switches<4>    |led<4>         |    8.599|
+switches<4>    |sevenseg<0>    |    9.525|
+switches<4>    |sevenseg<1>    |    9.606|
+switches<4>    |sevenseg<2>    |    9.903|
+switches<4>    |sevenseg<3>    |    9.957|
+switches<4>    |sevenseg<4>    |   10.171|
+switches<4>    |sevenseg<5>    |    9.841|
+switches<4>    |sevenseg<6>    |   10.144|
+switches<5>    |led<1>         |    9.407|
+switches<5>    |led<2>         |    9.017|
+switches<5>    |led<3>         |    9.513|
+switches<5>    |led<4>         |    8.437|
+switches<5>    |sevenseg<0>    |    9.369|
+switches<5>    |sevenseg<1>    |    9.444|
+switches<5>    |sevenseg<2>    |    9.684|
+switches<5>    |sevenseg<3>    |    9.801|
+switches<5>    |sevenseg<4>    |   10.009|
+switches<5>    |sevenseg<5>    |    9.622|
+switches<5>    |sevenseg<6>    |    9.982|
+switches<6>    |led<2>         |    9.505|
+switches<6>    |led<3>         |    9.072|
+switches<6>    |led<4>         |    7.996|
+switches<6>    |sevenseg<0>    |    9.794|
+switches<6>    |sevenseg<1>    |    9.621|
+switches<6>    |sevenseg<2>    |   10.172|
+switches<6>    |sevenseg<3>    |   10.226|
+switches<6>    |sevenseg<4>    |   10.036|
+switches<6>    |sevenseg<5>    |   10.110|
+switches<6>    |sevenseg<6>    |   10.009|
+switches<7>    |led<3>         |    9.078|
+switches<7>    |led<4>         |    8.002|
+switches<7>    |sevenseg<0>    |    8.686|
+switches<7>    |sevenseg<1>    |    9.009|
+switches<7>    |sevenseg<2>    |    9.097|
+switches<7>    |sevenseg<3>    |    9.118|
+switches<7>    |sevenseg<4>    |    9.574|
+switches<7>    |sevenseg<5>    |    9.035|
+switches<7>    |sevenseg<6>    |    9.547|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Sep 29 10:12:19 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 287 MB
+
+
+

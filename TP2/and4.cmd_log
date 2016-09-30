@@ -1,0 +1,4 @@
+vhdtdtfi -prj TP2 -o /home/m1/cuvilliers/Documents/AEO/TP2/and4.vhi -lib work /home/m1/cuvilliers/Documents/AEO/TP2//and4.vhd -module and4 -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
+vhdtdtfi -lib work and4.vhd -prj TP2 -o and4.spl -module and4 -template /opt/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 and4.spl /home/m1/cuvilliers/Documents/AEO/TP2/and4.sym 
+vhdtdtfi -prj TP2 -o /home/m1/cuvilliers/Documents/AEO/TP2/and4.vhi -lib work /home/m1/cuvilliers/Documents/AEO/TP2//and4.vhd -module and4 -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

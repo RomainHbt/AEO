@@ -1,0 +1,40 @@
+ENTITY myFunc IS
+  PORT(
+    a : IN std_logic_vector(4 DOWNTOWN 0);
+    s : OUT std_logic_vector(2 DOWNTOWN 0);
+  );
+  END myFunc;
+
+  ARCHITECTURE ar OF myFunc IS
+  BEGIN
+    aa <= a;
+    WITH abc SELECT
+    s <=
+        "101" WHEN "01001"
+        "011" WHEN "10010"
+        "001" WHEN "10011" | "10100" | "10101" | "10110"
+        "000" WHEN OTHERS;
+  END ar;
+
+
+  ENTITY myFunc IS
+    PORT(
+      a : IN std_logic ;
+      b : IN std_logic ;
+      c : IN std_logic ;
+      d : IN std_logic ;
+      adr : IN std_logic_vector (2 DOWNTOWN 0);
+      s : OUT std_logic ;
+    );
+    END myFunc;
+
+    ARCHITECTURE ar OF myFunc IS
+    BEGIN
+      oc
+
+      s <= a when adr = '00' else
+           b when adr = '01' else
+           c when adr = '10' else
+           d;
+
+    END ar;

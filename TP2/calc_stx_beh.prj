@@ -1,0 +1,3 @@
+vhdl isim_temp "x7seg.vhd"
+vhdl isim_temp "add4.vhd"
+vhdl isim_temp "calc.vhd"

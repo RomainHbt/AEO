@@ -1,0 +1,3 @@
+vhdl work "x7seg.vhd"
+vhdl work "add4.vhd"
+vhdl work "calc.vhd"

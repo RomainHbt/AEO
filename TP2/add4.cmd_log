@@ -1,0 +1,1 @@
+vhdtdtfi -prj TP2 -o /home/m1/cuvilliers/Documents/AEO/TP2/add4.vhi -lib work /home/m1/cuvilliers/Documents/AEO/TP2//add4.vhd -module add4 -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
