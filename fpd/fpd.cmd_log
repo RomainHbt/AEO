@@ -1,0 +1,4 @@
+vhdtdtfi -lib work fpd.vhd -prj fpd -o fpd.spl -module fpd -template /opt/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 fpd.spl /home/m1/hembert/AEO/fpd/fpd.sym 
+vhdtdtfi -prj fpd -o /home/m1/hembert/AEO/fpd/fpd.vhi -lib work /home/m1/hembert/AEO/fpd//fpd.vhd -module fpd -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
+vhdtdtfi -prj fpd -o /home/m1/hembert/AEO/fpd/fpd.vhi -lib work /home/m1/hembert/AEO/fpd//fpd.vhd -module fpd -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

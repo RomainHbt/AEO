@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-09-23T10:28:22</DateModified>
+  <DateModified>2016-10-07T08:51:40</DateModified>
   <ModuleName>my_add</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/m1/cuvilliers/Documents/AEO/TP1/iseconfig/my_add.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/m1/cuvilliers/Documents/AEO/TP1</ImplementationReportsDirectory>
+  <SavedFilePath>/home/m1/hembert/AEO/TP1/iseconfig/my_add.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/m1/hembert/AEO/TP1/</ImplementationReportsDirectory>
   <DateInitialized>2016-09-23T10:28:21</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
