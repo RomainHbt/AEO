@@ -1,0 +1,30 @@
+Command line:
+   Digicode_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  36892
+
+Fri Oct 14 11:40:36 2016
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 157.671 Meg
+
+ Total Signals          : 8
+ Total Nets             : 25
+ Total Signal Drivers   : 5
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 4
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 385
+Total Line Count : 48
+Total Line Count : 48
+
+ Total Simulation Time: 0.05 sec
+
+ Current Memory Usage: 232.12 Meg
+
+Fri Oct 14 11:48:17 2016
+
