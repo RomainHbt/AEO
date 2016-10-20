@@ -1,0 +1,1 @@
+vhdtdtfi -prj CTP -o /home/m1/cuvilliers/Documents/AEO/CTP/clkdiv.vhi -lib work /home/m1/cuvilliers/Documents/AEO/CTP//clkdiv.vhd -module clkdiv -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

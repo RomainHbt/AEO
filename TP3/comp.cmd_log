@@ -1,0 +1,2 @@
+vhdtdtfi -prj TP3 -o /home/m1/cuvilliers/Documents/AEO/TP3/comp.vhi -lib work /home/m1/cuvilliers/Documents/AEO/TP3//comp.vhd -module comp -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
+vhdtdtfi -prj TP3 -o /home/m1/cuvilliers/Documents/AEO/TP3/comp.vhi -lib work /home/m1/cuvilliers/Documents/AEO/TP3//comp.vhd -module comp -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

@@ -1,0 +1,6 @@
+vhdl work "x7seg.vhd"
+vhdl work "Parity.vhd"
+vhdl work "count1.vhd"
+vhdl work "comp.vhd"
+vhdl work "add4.vhd"
+vhdl work "calc.vhd"

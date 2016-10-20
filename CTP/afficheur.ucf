@@ -1,0 +1,24 @@
+NET "switches<0>" LOC = "T10";
+NET "switches<1>" LOC = "T9";
+NET "switches<2>" LOC = "V9";
+NET "switches<3>" LOC = "M8";
+NET "switches<4>" LOC = "N8";
+NET "switches<5>" LOC = "U8";
+NET "switches<6>" LOC = "V8";
+NET "switches<7>" LOC = "T5";
+NET "sevenseg<0>" LOC = "T17";
+NET "sevenseg<1>" LOC = "T18";
+NET "sevenseg<2>" LOC = "U17";
+NET "sevenseg<3>" LOC = "U18";
+NET "sevenseg<4>" LOC = "M14";
+NET "sevenseg<5>" LOC = "N14";
+NET "sevenseg<6>" LOC = "L14";
+NET "anode<0>" LOC = "N16";
+NET "anode<1>" LOC = "N15";
+NET "anode<2>" LOC = "P18";
+NET "anode<3>" LOC = "P17";
+Net "clk" LOC=V10 | IOSTANDARD=LVCMOS33;
+
+
+
+
