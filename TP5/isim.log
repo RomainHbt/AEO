@@ -1,6 +1,5 @@
 ISim log file
 Running: /home/m1/hembert/AEO/TP5/Digicode_isim_beh.exe -gui -tclbatch isim.cmd -wdb /home/m1/hembert/AEO/TP5/Digicode_isim_beh.wdb 
-INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim M.81d (signature 0x9ca8bed6)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -13,23 +12,11 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # restart
-# isim force add /digicode/clk 0 -radix hex -value 1 -radix hex -time 5 ns -repeat 10 ns
 # isim force add /digicode/sw 11011100 -radix bin
+# isim force add /digicode/clk 0 -radix hex -value 1 -radix hex -time 5 ns -repeat 10 ns
 # run 1.00us
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# isim force add /digicode/btn 00000 -radix bin
-# run 1.00us
 # isim force add /digicode/btn 00001 -radix bin
-# run 1.00us
-# isim force add /digicode/btn 00100 -radix bin
-# run 1.00us
-# isim force add /digicode/btn 00010 -radix bin
-# run 1.00us
-# isim force add /digicode/btn 01000 -radix bin
-# run 1.00us
-# isim force add /digicode/btn 00010 -radix bin
-# run 1.00us
-# isim force add /digicode/btn 01000 -radix bin
 # run 1.00us
 # exit 0

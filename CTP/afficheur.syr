@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: afficheur.prj
@@ -109,16 +109,16 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/m1/cuvilliers/Documents/AEO/CTP/x7seg.vhd" into library work
+Parsing VHDL file "/home/m1/hembert/AEO/CTP/x7seg.vhd" into library work
 Parsing entity <x7seg>.
 Parsing architecture <Behavioral> of entity <x7seg>.
-Parsing VHDL file "/home/m1/cuvilliers/Documents/AEO/CTP/Question1.vhd" into library work
+Parsing VHDL file "/home/m1/hembert/AEO/CTP/Question1.vhd" into library work
 Parsing entity <FSM>.
 Parsing architecture <Behavioral> of entity <fsm>.
-Parsing VHDL file "/home/m1/cuvilliers/Documents/AEO/CTP/clkdiv.vhd" into library work
+Parsing VHDL file "/home/m1/hembert/AEO/CTP/clkdiv.vhd" into library work
 Parsing entity <clkdiv>.
 Parsing architecture <clkdiv> of entity <clkdiv>.
-Parsing VHDL file "/home/m1/cuvilliers/Documents/AEO/CTP/afficheur.vhd" into library work
+Parsing VHDL file "/home/m1/hembert/AEO/CTP/afficheur.vhd" into library work
 Parsing entity <afficheur>.
 Parsing architecture <Behavioral> of entity <afficheur>.
 
@@ -133,29 +133,33 @@ Elaborating entity <x7seg> (architecture <Behavioral>) from library <work>.
 Elaborating entity <clkdiv> (architecture <clkdiv>) from library <work>.
 
 Elaborating entity <FSM> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/m1/cuvilliers/Documents/AEO/CTP/afficheur.vhd" Line 70: Net <reset> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/m1/hembert/AEO/CTP/afficheur.vhd" Line 70: Net <reset> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <afficheur>.
-    Related source file is "/home/m1/cuvilliers/Documents/AEO/CTP/afficheur.vhd".
-INFO:Xst:3010 - "/home/m1/cuvilliers/Documents/AEO/CTP/afficheur.vhd" line 79: Output port <E190> of the instance <Inst_clkdiv> is unconnected or connected to loadless signal.
+    Related source file is "/home/m1/hembert/AEO/CTP/afficheur.vhd".
+WARNING:Xst:647 - Input <switches<6:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <switches<4:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <switches<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <switches<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3010 - "/home/m1/hembert/AEO/CTP/afficheur.vhd" line 85: Output port <E190> of the instance <Inst_clkdiv> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <reset> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <afficheur> synthesized.
 
 Synthesizing Unit <x7seg>.
-    Related source file is "/home/m1/cuvilliers/Documents/AEO/CTP/x7seg.vhd".
+    Related source file is "/home/m1/hembert/AEO/CTP/x7seg.vhd".
     Found 16x7-bit Read Only RAM for signal <seg>
     Summary:
 	inferred   1 RAM(s).
 Unit <x7seg> synthesized.
 
 Synthesizing Unit <clkdiv>.
-    Related source file is "/home/m1/cuvilliers/Documents/AEO/CTP/clkdiv.vhd".
+    Related source file is "/home/m1/hembert/AEO/CTP/clkdiv.vhd".
     Found 1-bit register for signal <E190>.
     Found 24-bit register for signal <q>.
     Found 24-bit adder for signal <q[23]_GND_7_o_add_0_OUT> created at line 40.
@@ -165,7 +169,7 @@ Synthesizing Unit <clkdiv>.
 Unit <clkdiv> synthesized.
 
 Synthesizing Unit <FSM>.
-    Related source file is "/home/m1/cuvilliers/Documents/AEO/CTP/Question1.vhd".
+    Related source file is "/home/m1/hembert/AEO/CTP/Question1.vhd".
     Found 4-bit register for signal <sorties>.
     Found 4-bit register for signal <output_afficheur>.
     Found 2-bit register for signal <state>.
@@ -186,10 +190,10 @@ Synthesizing Unit <FSM>.
 	inferred   1 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <FSM> synthesized.
-RTL-Simplification CPUSTAT: 0.02 
+RTL-Simplification CPUSTAT: 0.00 
 RTL-BasicInf CPUSTAT: 0.07 
 RTL-BasicOpt CPUSTAT: 0.00 
-RTL-Remain-Bus CPUSTAT: 0.00 
+RTL-Remain-Bus CPUSTAT: 0.01 
 
 =========================================================================
 HDL Synthesis Report
@@ -269,6 +273,7 @@ WARNING:Xst:2677 - Node <Inst_clkdiv/q_20> of sequential type is unconnected in 
 WARNING:Xst:2677 - Node <Inst_clkdiv/q_21> of sequential type is unconnected in block <afficheur>.
 WARNING:Xst:2677 - Node <Inst_clkdiv/q_22> of sequential type is unconnected in block <afficheur>.
 WARNING:Xst:2677 - Node <Inst_clkdiv/q_23> of sequential type is unconnected in block <afficheur>.
+INFO:Xst:2261 - The FF/Latch <sorties_0> in Unit <FSM> is equivalent to the following 3 FFs/Latches, which will be removed : <sorties_1> <sorties_2> <sorties_3> 
 
 Optimizing unit <afficheur> ...
 
@@ -284,8 +289,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 31
- Flip-Flops                                            : 31
+# Registers                                            : 28
+ Flip-Flops                                            : 28
 
 =========================================================================
 
@@ -308,21 +313,21 @@ Top Level Output File Name         : afficheur.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 77
+# BELS                             : 65
 #      GND                         : 1
-#      INV                         : 5
+#      INV                         : 6
 #      LUT1                        : 18
-#      LUT4                        : 11
-#      LUT5                        : 4
+#      LUT4                        : 1
+#      LUT5                        : 1
 #      MUXCY                       : 18
 #      VCC                         : 1
 #      XORCY                       : 19
-# FlipFlops/Latches                : 31
-#      FD                          : 31
+# FlipFlops/Latches                : 28
+#      FD                          : 28
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 19
-#      IBUF                        : 8
+# IO Buffers                       : 15
+#      IBUF                        : 4
 #      OBUF                        : 11
 
 Device utilization summary:
@@ -332,20 +337,20 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              31  out of  18224     0%  
- Number of Slice LUTs:                   38  out of   9112     0%  
-    Number used as Logic:                38  out of   9112     0%  
+ Number of Slice Registers:              28  out of  18224     0%  
+ Number of Slice LUTs:                   26  out of   9112     0%  
+    Number used as Logic:                26  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     41
-   Number with an unused Flip Flop:      10  out of     41    24%  
-   Number with an unused LUT:             3  out of     41     7%  
-   Number of fully used LUT-FF pairs:    28  out of     41    68%  
+ Number of LUT Flip Flop pairs used:     30
+   Number with an unused Flip Flop:       2  out of     30     6%  
+   Number with an unused LUT:             4  out of     30    13%  
+   Number of fully used LUT-FF pairs:    24  out of     30    80%  
    Number of unique control sets:         2
 
 IO Utilization: 
  Number of IOs:                          20
- Number of bonded IOBs:                  20  out of    232     8%  
+ Number of bonded IOBs:                  16  out of    232     6%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -372,7 +377,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)        | Load  |
 -----------------------------------+------------------------------+-------+
 clk                                | BUFGP                        | 19    |
-Inst_clkdiv/q_18                   | NONE(Inst_FSM/state_FSM_FFd4)| 12    |
+Inst_clkdiv/q_18                   | NONE(Inst_FSM/state_FSM_FFd4)| 9     |
 -----------------------------------+------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -384,9 +389,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 2.386ns (Maximum Frequency: 419.182MHz)
-   Minimum input arrival time before clock: 3.176ns
-   Maximum output required time after clock: 4.821ns
+   Minimum period: 2.292ns (Maximum Frequency: 436.281MHz)
+   Minimum input arrival time before clock: 3.139ns
+   Maximum output required time after clock: 4.485ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -436,67 +441,67 @@ Delay:               2.009ns (Levels of Logic = 20)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_clkdiv/q_18'
-  Clock period: 2.386ns (frequency: 419.182MHz)
-  Total number of paths / destination ports: 24 / 12
+  Clock period: 2.292ns (frequency: 436.281MHz)
+  Total number of paths / destination ports: 12 / 9
 -------------------------------------------------------------------------
-Delay:               2.386ns (Levels of Logic = 2)
-  Source:            Inst_FSM/state_FSM_FFd1 (FF)
-  Destination:       Inst_FSM/sorties_3 (FF)
+Delay:               2.292ns (Levels of Logic = 2)
+  Source:            Inst_FSM/state_FSM_FFd2 (FF)
+  Destination:       Inst_FSM/sorties_0 (FF)
   Source Clock:      Inst_clkdiv/q_18 rising
   Destination Clock: Inst_clkdiv/q_18 rising
 
-  Data Path: Inst_FSM/state_FSM_FFd1 to Inst_FSM/sorties_3
+  Data Path: Inst_FSM/state_FSM_FFd2 to Inst_FSM/sorties_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               6   0.447   0.849  Inst_FSM/state_FSM_FFd1 (Inst_FSM/state_FSM_FFd1)
-     LUT4:I2->O            1   0.203   0.580  Inst_FSM/Mmux_sorties_i<3>_SW0 (N01)
-     LUT5:I4->O            1   0.205   0.000  Inst_FSM/Mmux_sorties_i<3> (Inst_FSM/sorties_i<3>)
-     FD:D                      0.102          Inst_FSM/sorties_3
+     FD:C->Q               3   0.447   0.755  Inst_FSM/state_FSM_FFd2 (Inst_FSM/state_FSM_FFd2)
+     LUT4:I2->O            1   0.203   0.580  Inst_FSM/sorties_i<0>_SW0 (N01)
+     LUT5:I4->O            1   0.205   0.000  Inst_FSM/sorties_i<0> (Inst_FSM/sorties_i<0>)
+     FD:D                      0.102          Inst_FSM/sorties_0
     ----------------------------------------
-    Total                      2.386ns (0.957ns logic, 1.429ns route)
-                                       (40.1% logic, 59.9% route)
+    Total                      2.292ns (0.957ns logic, 1.335ns route)
+                                       (41.8% logic, 58.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_clkdiv/q_18'
-  Total number of paths / destination ports: 16 / 4
+  Total number of paths / destination ports: 4 / 1
 -------------------------------------------------------------------------
-Offset:              3.176ns (Levels of Logic = 3)
+Offset:              3.139ns (Levels of Logic = 3)
   Source:            switches<3> (PAD)
-  Destination:       Inst_FSM/sorties_3 (FF)
+  Destination:       Inst_FSM/sorties_0 (FF)
   Destination Clock: Inst_clkdiv/q_18 rising
 
-  Data Path: switches<3> to Inst_FSM/sorties_3
+  Data Path: switches<3> to Inst_FSM/sorties_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.864  switches_3_IBUF (switches_3_IBUF)
-     LUT4:I0->O            1   0.203   0.580  Inst_FSM/Mmux_sorties_i<3>_SW0 (N01)
-     LUT5:I4->O            1   0.205   0.000  Inst_FSM/Mmux_sorties_i<3> (Inst_FSM/sorties_i<3>)
-     FD:D                      0.102          Inst_FSM/sorties_3
+     IBUF:I->O             1   1.222   0.827  switches_3_IBUF (switches_3_IBUF)
+     LUT4:I0->O            1   0.203   0.580  Inst_FSM/sorties_i<0>_SW0 (N01)
+     LUT5:I4->O            1   0.205   0.000  Inst_FSM/sorties_i<0> (Inst_FSM/sorties_i<0>)
+     FD:D                      0.102          Inst_FSM/sorties_0
     ----------------------------------------
-    Total                      3.176ns (1.732ns logic, 1.444ns route)
-                                       (54.5% logic, 45.5% route)
+    Total                      3.139ns (1.732ns logic, 1.407ns route)
+                                       (55.2% logic, 44.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_clkdiv/q_18'
-  Total number of paths / destination ports: 32 / 11
+  Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              4.821ns (Levels of Logic = 2)
-  Source:            Inst_FSM/sorties_1 (FF)
+Offset:              4.485ns (Levels of Logic = 2)
+  Source:            Inst_FSM/sorties_0 (FF)
   Destination:       sevenseg<6> (PAD)
   Source Clock:      Inst_clkdiv/q_18 rising
 
-  Data Path: Inst_FSM/sorties_1 to sevenseg<6>
+  Data Path: Inst_FSM/sorties_0 to sevenseg<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               7   0.447   1.021  Inst_FSM/sorties_1 (Inst_FSM/sorties_1)
-     LUT4:I0->O            1   0.203   0.579  Afficheur/Mram_seg61 (sevenseg_6_OBUF)
+     FD:C->Q               4   0.447   0.683  Inst_FSM/sorties_0 (Inst_FSM/sorties_0)
+     INV:I->O              1   0.206   0.579  Afficheur/Mram_seg61_INV_0 (sevenseg_6_OBUF)
      OBUF:I->O                 2.571          sevenseg_6_OBUF (sevenseg<6>)
     ----------------------------------------
-    Total                      4.821ns (3.221ns logic, 1.600ns route)
-                                       (66.8% logic, 33.2% route)
+    Total                      4.485ns (3.224ns logic, 1.261ns route)
+                                       (71.9% logic, 28.1% route)
 
 =========================================================================
 
@@ -508,7 +513,7 @@ Clock to Setup on destination clock Inst_clkdiv/q_18
                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------+---------+---------+---------+---------+
-Inst_clkdiv/q_18|    2.386|         |         |         |
+Inst_clkdiv/q_18|    2.292|         |         |         |
 ----------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -523,14 +528,14 @@ clk            |    2.009|         |         |         |
 
 
 Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 2.28 secs
+Total CPU time to Xst completion: 2.21 secs
  
 --> 
 
 
-Total memory usage is 363180 kilobytes
+Total memory usage is 363192 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    8 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
 

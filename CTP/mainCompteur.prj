@@ -1,0 +1,5 @@
+vhdl work "x7seg.vhd"
+vhdl work "Question1.vhd"
+vhdl work "increment.vhd"
+vhdl work "compteur.vhd"
+vhdl work "mainCompteur.vhd"

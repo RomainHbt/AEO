@@ -48,7 +48,7 @@ END COMPONENT;
 
 COMPONENT FSM
 	PORT(
-		sw : in STD_LOGIC_VECTOR (7 downto 0);
+		sw : in STD_LOGIC_VECTOR (15 downto 0);
 		clk : IN std_logic;
 		reset : IN std_logic;
 		output_afficheur : out STD_LOGIC_VECTOR (3 downto 0);
@@ -68,8 +68,14 @@ COMPONENT clkdiv
 signal E190_out : std_logic;	
 signal fclk : std_logic;
 signal reset : std_logic;
+signal entreeAfficheur : STD_LOGIC_VECTOR (15 downto 0);
 signal sortieAfficheur : STD_LOGIC_VECTOR (3 downto 0);
 begin
+
+entreeAfficheur <= switches(7) & switches(7) & switches(7) & switches(7) &
+							switches(5) & switches(5) &switches(5) & switches(5) &
+							switches(3) & switches(3) & switches(3) & switches(3) &
+							switches(1) & switches(1) & switches(1) & switches(1);
 
 Afficheur: x7seg PORT MAP(
 		sw => sortieAfficheur,
@@ -84,7 +90,7 @@ Inst_clkdiv: clkdiv PORT MAP(
 	);
 	
 Inst_FSM: FSM PORT MAP(
-		sw => switches,
+		sw => entreeAfficheur,
 		clk => fclk,
 		reset => reset,
 		output_afficheur => anode,

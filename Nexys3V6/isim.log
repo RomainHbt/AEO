@@ -1,0 +1,211 @@
+ISim log file
+Running: /home/m1/hembert/AEO/Nexys3V6/masterbench_isim_beh.exe -gui -tclbatch isim.cmd -wdb /home/m1/hembert/AEO/Nexys3V6/masterbench_isim_beh.wdb 
+ISim M.81d (signature 0x9ca8bed6)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(0)\/bank/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(0)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(1)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(2)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(3)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(4)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(5)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(6)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(7)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(8)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(9)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(10)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(11)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(12)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(13)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(14)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(15)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(16)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(17)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(18)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(19)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(20)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(21)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(22)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(23)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(24)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(25)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(26)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(27)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(28)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(29)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(30)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(31)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(32)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(33)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(34)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(35)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(36)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(37)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(38)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(39)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(40)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(41)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(42)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(43)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(44)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(45)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(46)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(47)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(48)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(49)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(50)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(51)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(52)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(53)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(54)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(55)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(56)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(57)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(58)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(59)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(60)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(61)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(62)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(63)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/update_counter/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/mfunit/Inst_IPFunit/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Finished circuit initialization process.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# restart
+# isim force add /masterbench/mclk 0 -radix hex -value 1 -radix hex -time 2500 ns -repeat 5 us
+# isim force add /masterbench/sw 10000010 -radix bin
+# run 10us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(0)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(1)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(2)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(3)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(4)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(5)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(6)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(7)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(8)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(9)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(10)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(11)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(12)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(13)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(14)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(15)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(16)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(17)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(18)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(19)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(20)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(21)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(22)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(23)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(24)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(25)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(26)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(27)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(28)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(29)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(30)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(31)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(32)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(33)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(34)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(35)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(36)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(37)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(38)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(39)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(40)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(41)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(42)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(43)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(44)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(45)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(46)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(47)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(48)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(49)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(50)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(51)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(52)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(53)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(54)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(55)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(56)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(57)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(58)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(59)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(60)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(61)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(62)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Inst_mem_Master/\multi_bank(63)\/bank/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/update_counter/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/mfunit/Inst_IPFunit/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Finished circuit initialization process.
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /masterbench/HoMade/Stack_Master/ram3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 2500 ns(1), Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2500 ns(1), Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2500 ns(1), Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2500 ns(1), Instance /masterbench/HoMade/Stack_Master/sel_out/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2500 ns(2), Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2500 ns(2), Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2500 ns(2), Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2500 ns(2), Instance /masterbench/HoMade/Stack_Master/sel_in/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# run 10us
+# run 10us
+# run 10us
+# run 10us
+# isim force add /masterbench/btn 10000 -radix bin
+# run 10us
+# run 10us
+# run 10us
+# run 10us
+# run 10us
+# exit 0

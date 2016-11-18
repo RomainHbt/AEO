@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity FSM is
-    Port ( sw : in STD_LOGIC_VECTOR (7 downto 0);
+    Port ( sw : in STD_LOGIC_VECTOR (15 downto 0);
 			  clk : in  STD_LOGIC;
 			  reset : in  STD_LOGIC;
 			  output_afficheur : out STD_LOGIC_VECTOR (3 downto 0);
@@ -82,10 +82,10 @@ begin
 		case (state) is
 			when st_anode1 =>
 				output_afficheur_i <= "0111";
-				sorties_i <= sw(0) & sw(1) & sw(2) & sw(3);
+				sorties_i <= sw(15 downto 12);
 			when st_anode2 =>
 				output_afficheur_i <= "1011";
-				sorties_i <= sw(4) & sw(5) & sw(6) & sw(7);
+				sorties_i <= sw(11 downto 8);
 			when st_anode3 =>
 				output_afficheur_i <= "1101";
 				sorties_i <= sw(7 downto 4);

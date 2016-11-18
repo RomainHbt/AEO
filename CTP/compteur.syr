@@ -1,0 +1,417 @@
+Release 12.4 - xst M.81d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: compteur.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "compteur.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "compteur"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : compteur
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/m1/hembert/AEO/CTP/compteur.vhd" into library work
+Parsing entity <compteur>.
+Parsing architecture <Behavioral> of entity <compteur>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <compteur> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <compteur>.
+    Related source file is "/home/m1/hembert/AEO/CTP/compteur.vhd".
+    Found 31-bit register for signal <q>.
+    Found 1-bit register for signal <E10>.
+    Found 31-bit adder for signal <q[30]_GND_5_o_add_0_OUT> created at line 50.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <compteur> synthesized.
+RTL-Simplification CPUSTAT: 0.01 
+RTL-BasicInf CPUSTAT: 0.07 
+RTL-BasicOpt CPUSTAT: 0.00 
+RTL-Remain-Bus CPUSTAT: 0.00 
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 31-bit adder                                          : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 31-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <compteur>.
+The following registers are absorbed into counter <q>: 1 register on signal <q>.
+Unit <compteur> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 31-bit adder                                          : 1
+# Counters                                             : 1
+ 31-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <q_26> of sequential type is unconnected in block <compteur>.
+WARNING:Xst:2677 - Node <q_27> of sequential type is unconnected in block <compteur>.
+WARNING:Xst:2677 - Node <q_28> of sequential type is unconnected in block <compteur>.
+WARNING:Xst:2677 - Node <q_29> of sequential type is unconnected in block <compteur>.
+WARNING:Xst:2677 - Node <q_30> of sequential type is unconnected in block <compteur>.
+
+Optimizing unit <compteur> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block compteur, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : compteur.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 133
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 50
+#      LUT2                        : 1
+#      MUXCY                       : 50
+#      VCC                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 27
+#      FDC                         : 26
+#      FDE                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      IBUF                        : 1
+#      OBUF                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              27  out of  18224     0%  
+ Number of Slice LUTs:                   54  out of   9112     0%  
+    Number used as Logic:                54  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     54
+   Number with an unused Flip Flop:      27  out of     54    50%  
+   Number with an unused LUT:             0  out of     54     0%  
+   Number of fully used LUT-FF pairs:    27  out of     54    50%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    232     1%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 27    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.964ns (Maximum Frequency: 337.370MHz)
+   Minimum input arrival time before clock: 3.549ns
+   Maximum output required time after clock: 3.701ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.964ns (frequency: 337.370MHz)
+  Total number of paths / destination ports: 378 / 27
+-------------------------------------------------------------------------
+Delay:               2.964ns (Levels of Logic = 28)
+  Source:            q_0 (FF)
+  Destination:       E10 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: q_0 to E10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.616  q_0 (q_0)
+     INV:I->O              1   0.206   0.000  Madd_q[30]_GND_5_o_add_0_OUT_lut<0>_INV_0 (Madd_q[30]_GND_5_o_add_0_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<0> (Madd_q[30]_GND_5_o_add_0_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<1> (Madd_q[30]_GND_5_o_add_0_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<2> (Madd_q[30]_GND_5_o_add_0_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<3> (Madd_q[30]_GND_5_o_add_0_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<4> (Madd_q[30]_GND_5_o_add_0_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<5> (Madd_q[30]_GND_5_o_add_0_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<6> (Madd_q[30]_GND_5_o_add_0_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<7> (Madd_q[30]_GND_5_o_add_0_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<8> (Madd_q[30]_GND_5_o_add_0_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<9> (Madd_q[30]_GND_5_o_add_0_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<10> (Madd_q[30]_GND_5_o_add_0_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<11> (Madd_q[30]_GND_5_o_add_0_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<12> (Madd_q[30]_GND_5_o_add_0_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<13> (Madd_q[30]_GND_5_o_add_0_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<14> (Madd_q[30]_GND_5_o_add_0_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<15> (Madd_q[30]_GND_5_o_add_0_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<16> (Madd_q[30]_GND_5_o_add_0_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<17> (Madd_q[30]_GND_5_o_add_0_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<18> (Madd_q[30]_GND_5_o_add_0_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<19> (Madd_q[30]_GND_5_o_add_0_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<20> (Madd_q[30]_GND_5_o_add_0_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<21> (Madd_q[30]_GND_5_o_add_0_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<22> (Madd_q[30]_GND_5_o_add_0_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<23> (Madd_q[30]_GND_5_o_add_0_OUT_cy<23>)
+     MUXCY:CI->O           0   0.019   0.000  Madd_q[30]_GND_5_o_add_0_OUT_cy<24> (Madd_q[30]_GND_5_o_add_0_OUT_cy<24>)
+     XORCY:CI->O           1   0.180   0.580  Madd_q[30]_GND_5_o_add_0_OUT_xor<25> (q[30]_GND_5_o_add_0_OUT<25>)
+     LUT2:I1->O            1   0.205   0.000  q[30]_clkin_AND_1_o1 (q[30]_clkin_AND_1_o)
+     FDE:D                     0.102          E10
+    ----------------------------------------
+    Total                      2.964ns (1.768ns logic, 1.196ns route)
+                                       (59.6% logic, 40.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 27 / 27
+-------------------------------------------------------------------------
+Offset:              3.549ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       E10 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to E10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            27   1.222   1.220  reset_IBUF (reset_IBUF)
+     INV:I->O              1   0.206   0.579  reset_inv1_INV_0 (reset_inv)
+     FDE:CE                    0.322          E10
+    ----------------------------------------
+    Total                      3.549ns (1.750ns logic, 1.799ns route)
+                                       (49.3% logic, 50.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.701ns (Levels of Logic = 1)
+  Source:            q_25 (FF)
+  Destination:       clk10 (PAD)
+  Source Clock:      clk rising
+
+  Data Path: q_25 to clk10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  q_25 (q_25)
+     OBUF:I->O                 2.571          clk10_OBUF (clk10)
+    ----------------------------------------
+    Total                      3.701ns (3.018ns logic, 0.683ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.964|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.17 secs
+ 
+--> 
+
+
+Total memory usage is 362656 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

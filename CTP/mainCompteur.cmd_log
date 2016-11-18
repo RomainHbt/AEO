@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/m1/hembert/AEO/CTP/mainCompteur.xst" -ofn "/home/m1/hembert/AEO/CTP/mainCompteur.syr" 
+xst -intstyle ise -ifn "/home/m1/hembert/AEO/CTP/mainCompteur.xst" -ofn "/home/m1/hembert/AEO/CTP/mainCompteur.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 mainCompteur.ngc mainCompteur.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainCompteur_map.ncd mainCompteur.ngd mainCompteur.pcf 
+par -w -intstyle ise -ol high -mt off mainCompteur_map.ncd mainCompteur.ncd mainCompteur.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainCompteur.twx mainCompteur.ncd -o mainCompteur.twr mainCompteur.pcf 
+bitgen -intstyle ise -f mainCompteur.ut mainCompteur.ncd 

@@ -5,37 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/m1/cuvilliers/Documents/AEO/CTP/afficheur.vhd" Line 70: Net &lt;<arg fmt="%s" index="1">reset</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/m1/hembert/AEO/CTP/mainCompteur.vhd" Line 78: Net &lt;<arg fmt="%s" index="1">reset</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">/home/m1/cuvilliers/Documents/AEO/CTP/afficheur.vhd</arg>&quot; line <arg fmt="%d" index="2">79</arg>: Output port &lt;<arg fmt="%s" index="3">E190</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_clkdiv</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">/home/m1/hembert/AEO/CTP/mainCompteur.vhd</arg>&quot; line <arg fmt="%d" index="2">97</arg>: Output port &lt;<arg fmt="%s" index="3">E10</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_compteur</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">reset</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">reset</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="3048" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_seg</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+<msg type="info" file="Xst" num="3048" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_seg</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_clkdiv/E190</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">afficheur</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_clkdiv/q_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">afficheur</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_clkdiv/q_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">afficheur</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_clkdiv/q_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">afficheur</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_clkdiv/q_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">afficheur</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_clkdiv/q_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">afficheur</arg>&gt;.
-</msg>
-
-<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_compteur/E10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mainCompteur</arg>&gt;.
 </msg>
 
 </messages>

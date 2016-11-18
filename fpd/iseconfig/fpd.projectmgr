@@ -74,7 +74,6 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/shift - Behavioral |home|m1|hembert|AEO|fpd|shift.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>shift_vector - Behavioral (/home/m1/hembert/AEO/fpd/shift_vector.vhd)</SelectedItem>

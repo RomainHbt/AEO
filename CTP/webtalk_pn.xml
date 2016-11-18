@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Thu Oct 20 11:17:28 2016">
+<application name="pn" timeStamp="Fri Oct 21 10:24:16 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="B74FE9A129B0C127C0B6659CD76E36B8" type="project"/>
-<property name="ProjectIteration" value="1" type="project"/>
-<property name="ProjectFile" value="/home/m1/cuvilliers/Documents/AEO/CTP/CTP.xise" type="project"/>
+<property name="ProjectIteration" value="4" type="project"/>
+<property name="ProjectFile" value="/home/m1/hembert/AEO/CTP/CTP.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2016-10-20T10:06:23" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
@@ -17,6 +17,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_PropSpecInProjFile" value="Store non-default values only" type="design"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/compteur" type="process"/>
 <property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
@@ -24,10 +25,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2016-10-20T10:06:23" type="design"/>
 <property name="PROP_intWbtProjectID" value="B74FE9A129B0C127C0B6659CD76E36B8" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="1" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="4" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.compteur" type="process"/>
 <property name="PROP_AutoTop" value="false" type="design"/>
 <property name="PROP_DevFamily" value="Spartan6" type="design"/>
 <property name="PROP_DevDevice" value="xc6slx16" type="design"/>
@@ -37,7 +39,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_DevSpeed" value="-3" type="design"/>
 <property name="PROP_PreferredLanguage" value="VHDL" type="design"/>
 <property name="FILE_UCF" value="1" type="source"/>
-<property name="FILE_VHDL" value="4" type="source"/>
+<property name="FILE_VHDL" value="7" type="source"/>
 </section>
 </application>
 </document>

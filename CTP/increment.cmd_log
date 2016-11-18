@@ -1,0 +1,1 @@
+vhdtdtfi -prj CTP -o /home/m1/hembert/AEO/CTP/increment.vhi -lib work /home/m1/hembert/AEO/CTP//increment.vhd -module increment -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

@@ -1,0 +1,31 @@
+TP7
+
+Exo 1
+-----
+Fonction :
+2004200320022001
+20001400
+
+Programme :
+0 - 0c00_0000_000c_ffff --> 0c00_0000_000c = Déplacement vers l'adresse "C"
+4 - 2004_2003_2002_2001 --> Déclaration de fonction
+8 - 2000_1400_ffff_ffff --> Déclaration de fonction // 1400 = return
+C - 1000_0000_0004_1c00 --> 1000_0000_0004 = Call adresse 4 // 1C00 = arrêt du programme (Halt)
+ffffffffffffffff
+
+
+Exo 2
+-----
+
+1)  a b c d + * + e f * -
+200a_200b_200c_200d --> Mettre A B C D dans la pile
+c820_cc21_c814_200e --> Addition // Multiplication // Addition // Mettre E dans la pile
+200f_cc05_c804_1400 --> Mettre F dans la pile // Multiplication // Soustraction // Return
+
+2) a b + a b - *
+200a_200b_c820_200a
+200b_c821_cc14_1400
+
+Avec une rotation en laissant A et B sur la pile a
+200a_200b_8820_f80d
+c821_cc14_1400_ffff

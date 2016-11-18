@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "/home/m1/hembert/AEO/CTP/compteur.xst" -ofn "/home/m1/hembert/AEO/CTP/compteur.syr" 
+xst -intstyle ise -ifn "/home/m1/hembert/AEO/CTP/compteur.xst" -ofn "/home/m1/hembert/AEO/CTP/compteur.syr" 
+xst -intstyle ise -ifn "/home/m1/hembert/AEO/CTP/compteur.xst" -ofn "/home/m1/hembert/AEO/CTP/compteur.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 compteur.ngc compteur.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o compteur_map.ncd compteur.ngd compteur.pcf 
+par -w -intstyle ise -ol high -mt off compteur_map.ncd compteur.ncd compteur.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml compteur.twx compteur.ncd -o compteur.twr compteur.pcf 
+vhdtdtfi -prj CTP -o /home/m1/hembert/AEO/CTP/compteur.vhi -lib work /home/m1/hembert/AEO/CTP//compteur.vhd -module compteur -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
