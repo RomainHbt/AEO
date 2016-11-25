@@ -1,0 +1,1 @@
+vhdtdtfi -prj TP8_ISE -o /home/m1/hembert/AEO/TP8_ISE/random.vhi -lib work /home/m1/hembert/AEO/TP8_ISE//random.vhd -module random -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

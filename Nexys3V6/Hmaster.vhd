@@ -413,14 +413,14 @@ COMPONENT IP_MEcom
 		);
 	END COMPONENT;
 	
---COMPONENT IP_Rdm
---	GENERIC (Mycode : std_logic_vector (10 downto 0));
---	PORT(
---		clk , reset: IN std_logic;
---		IPcode : IN std_logic_vector(10 downto 0);          
---		Tout : OUT std_logic_vector(31 downto 0)
---		);
---	END COMPONENT;
+COMPONENT IP_Rdm
+	GENERIC (Mycode : std_logic_vector (10 downto 0));
+	PORT(
+		clk , reset: IN std_logic;
+		IPcode : IN std_logic_vector(10 downto 0);          
+		Tout : OUT std_logic_vector(31 downto 0)
+		);
+	END COMPONENT;
 	
 --COMPONENT IP_muladd
 --	GENERIC (Mycode : std_logic_vector (10 downto 0));
