@@ -10,89 +10,21 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /ip_rdm/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 Finished circuit initialization process.
 # restart
-# isim force add /ip_rdm/ipcode 00000010000 -radix bin
 # isim force add /ip_rdm/clk 0 -radix hex -value 1 -radix hex -time 5 ns -repeat 10 ns
 # run 10ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run 10ns
 # run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
+# isim force add /ip_rdm/enable 1 -radix bin
+# isim force add /ip_rdm/enable 1 -radix bin
+# run 500ns
 # restart
-# isim force add /ip_rdm/ipcode 00000010000 -radix bin
 # isim force add /ip_rdm/clk 0 -radix hex -value 1 -radix hex -time 5 ns -repeat 10 ns
+# isim force add /ip_rdm/enable 1 -radix bin
 # run 500ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
 # exit 0

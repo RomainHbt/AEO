@@ -20,5 +20,5 @@ Waiting for 1 sub-compilation(s) to finish...
 Compiled 7 VHDL Units
 Built simulation executable /home/m1/hembert/AEO/TP8_ISE/IP_Rdm_isim_beh.exe
 Fuse Memory Usage: 635320 KB
-Fuse CPU Usage: 80 ms
-GCC CPU Usage: 110 ms
+Fuse CPU Usage: 70 ms
+GCC CPU Usage: 100 ms

@@ -48,23 +48,19 @@ COMPONENT random
 		random_num : OUT std_logic_vector(31 downto 0)
 		);
 	END COMPONENT;
-	
-signal qbus , busreg: std_logic_vector(31 downto 0) ;
-signal rstbus : std_logic;
+signal rdm: std_logic_vector(31 downto 0) ;
 signal enable : std_logic;
 begin
 
 myRandom: random PORT MAP(
 		clk => clk,
-		reset => rstbus,
+		reset => reset,
 		enable => enable,
-		random_num => qbus
+		random_num => rdm
 	);
 
-enable <= '1' when ipcode(10 downto 0)= Mycode else '0';
-busreg <= qbus + 1;
-rstbus <= '1' when reset ='1'  else '0';
-Tout <= qbus when ipcode(10 downto 0)= Mycode else (others =>'Z');
+enable <= '1' when ipcode(10 downto 0)= Mycode else '0';		
+Tout <= rdm when ipcode(10 downto 0)= Mycode else (others =>'Z');
 
 end Behavioral;
 

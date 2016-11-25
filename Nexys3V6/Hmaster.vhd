@@ -879,16 +879,16 @@ slv: IF NBSLAVE > 0 generate
 
 end generate slv;
 
---Mrdm : if genM_rdm = '1' generate
---Inst_IP_Rdm: IP_Rdm 
---		generic map (Mycode =>IPRdm)
---		PORT MAP(
---		clk => clock,
---		reset => reset,
---		IPcode => Icode,
---		Tout => Tbusst
---	);
---end generate Mrdm;
+Mrdm : if genM_rdm = '1' generate
+Inst_IP_Rdm: IP_Rdm 
+		generic map (Mycode =>IPRdm)
+		PORT MAP(
+		clk => clock,
+		reset => reset,
+		IPcode => Icode,
+		Tout => Tbusst
+	);
+end generate Mrdm;
 	
 --Mmuladd : if genM_muladd = '1' generate
 --Inst_IP_muladd: IP_muladd 

@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: Nexys3v6.prj
@@ -184,6 +184,9 @@ Parsing architecture <Behavioral> of entity <dstack>.
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/constant32.vhd" into library work
 Parsing entity <constant32>.
 Parsing architecture <Behavioral> of entity <constant32>.
+Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/../TP8_ISE/random.vhd" into library work
+Parsing entity <random>.
+Parsing architecture <Behavioral> of entity <random>.
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/slavedual_prom.vhd" into library work
 Parsing entity <Inst_mem>.
 Parsing architecture <Behavioral> of entity <inst_mem>.
@@ -244,6 +247,9 @@ Parsing architecture <myfunit> of entity <ip_funit>.
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/add_gen.vhd" into library work
 Parsing entity <add_gen>.
 Parsing architecture <Behavioral> of entity <add_gen>.
+Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/../TP8_ISE/IP_Rdm.vhd" into library work
+Parsing entity <IP_Rdm>.
+Parsing architecture <Behavioral> of entity <ip_rdm>.
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/x7seg.vhd" into library work
 Parsing entity <x7seg>.
 Parsing architecture <Behavioral> of entity <x7seg>.
@@ -449,6 +455,11 @@ Elaborating entity <IP_Tic> (architecture <Behavioral>) with generics from libra
 
 Elaborating entity <reg1c> (architecture <reg1c>) with generics from library <work>.
 
+Elaborating entity <IP_Rdm> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <random> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "/home/m1/hembert/AEO/Nexys3V6/../TP8_ISE/random.vhd" Line 56: sortie should be on the sensitivity list of the process
+
 Elaborating entity <IP_mul16> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <multiply> (architecture <>) from library <work>.
@@ -534,7 +545,7 @@ Synthesizing Unit <uart_rx>.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  13 D-type flip-flop(s).
-	inferred   6 Multiplexer(s).
+	inferred   5 Multiplexer(s).
 Unit <uart_rx> synthesized.
 
 Synthesizing Unit <mySR8CE>.
@@ -1813,6 +1824,54 @@ Synthesizing Unit <reg1c_2>.
 	inferred  32 D-type flip-flop(s).
 Unit <reg1c_2> synthesized.
 
+Synthesizing Unit <IP_Rdm>.
+    Related source file is "/home/m1/hembert/AEO/TP8_ISE/IP_Rdm.vhd".
+        Mycode = "00000010000"
+    Found 1-bit tristate buffer for signal <Tout<31>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<30>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<29>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<28>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<27>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<26>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<25>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<24>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<23>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<22>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<21>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<20>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<19>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<18>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<17>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<16>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<15>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<14>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<13>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<12>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<11>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<10>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<9>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<8>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<7>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<6>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<5>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<4>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<3>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<2>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<1>> created at line 63
+    Found 1-bit tristate buffer for signal <Tout<0>> created at line 63
+    Summary:
+	inferred  32 Tristate(s).
+Unit <IP_Rdm> synthesized.
+
+Synthesizing Unit <random>.
+    Related source file is "/home/m1/hembert/AEO/TP8_ISE/random.vhd".
+        width = 32
+    Found 32-bit register for signal <sortie>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <random> synthesized.
+
 Synthesizing Unit <IP_mul16>.
     Related source file is "/home/m1/hembert/AEO/Nexys3V6/IPmul16.vhd".
         Mycode = "00000010100"
@@ -1890,7 +1949,7 @@ Unit <x7seg> synthesized.
 Synthesizing Unit <CB2CE_HXILINX_afficheur>.
     Related source file is "/home/m1/hembert/AEO/Nexys3V6/afficheur.vhf".
     Found 2-bit register for signal <COUNT>.
-    Found 2-bit adder for signal <COUNT[1]_GND_962_o_add_0_OUT> created at line 94.
+    Found 2-bit adder for signal <COUNT[1]_GND_996_o_add_0_OUT> created at line 94.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   2 D-type flip-flop(s).
@@ -1940,7 +1999,7 @@ Unit <Enable190> synthesized.
 Synthesizing Unit <CB16CE_HXILINX_Enable190>.
     Related source file is "/home/m1/hembert/AEO/Nexys3V6/Enable190.vhf".
     Found 16-bit register for signal <COUNT>.
-    Found 16-bit adder for signal <COUNT[15]_GND_967_o_add_0_OUT> created at line 105.
+    Found 16-bit adder for signal <COUNT[15]_GND_1001_o_add_0_OUT> created at line 105.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  16 D-type flip-flop(s).
@@ -1950,7 +2009,7 @@ Unit <CB16CE_HXILINX_Enable190> synthesized.
 Synthesizing Unit <CB4CE_HXILINX_Enable190>.
     Related source file is "/home/m1/hembert/AEO/Nexys3V6/Enable190.vhf".
     Found 4-bit register for signal <COUNT>.
-    Found 4-bit adder for signal <COUNT[3]_GND_968_o_add_0_OUT> created at line 57.
+    Found 4-bit adder for signal <COUNT[3]_GND_1002_o_add_0_OUT> created at line 57.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   4 D-type flip-flop(s).
@@ -1990,12 +2049,12 @@ INFO:Xst:1799 - State release is never reached in FSM <state>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Summary:
-	inferred   4 D-type flip-flop(s).
-	inferred   3 Multiplexer(s).
+	inferred   6 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <arbitre> synthesized.
-RTL-Simplification CPUSTAT: 0.20 
-RTL-BasicInf CPUSTAT: 0.38 
+RTL-Simplification CPUSTAT: 0.19 
+RTL-BasicInf CPUSTAT: 0.46 
 RTL-BasicOpt CPUSTAT: 0.00 
 RTL-Remain-Bus CPUSTAT: 0.02 
 
@@ -2023,15 +2082,15 @@ Macro Statistics
  5-bit adder                                           : 1
  7-bit adder                                           : 1
  8-bit adder                                           : 1
-# Registers                                            : 64
- 1-bit register                                        : 23
+# Registers                                            : 67
+ 1-bit register                                        : 25
  11-bit register                                       : 2
  12-bit register                                       : 2
  13-bit register                                       : 1
  16-bit register                                       : 3
  2-bit register                                        : 3
  3-bit register                                        : 2
- 32-bit register                                       : 11
+ 32-bit register                                       : 12
  4-bit register                                        : 5
  48-bit register                                       : 2
  5-bit register                                        : 4
@@ -2040,7 +2099,7 @@ Macro Statistics
  8-bit register                                        : 4
 # Comparators                                          : 1
  32-bit comparator equal                               : 1
-# Multiplexers                                         : 155
+# Multiplexers                                         : 156
  1-bit 2-to-1 multiplexer                              : 54
  1-bit 4-to-1 multiplexer                              : 4
  1-bit 64-to-1 multiplexer                             : 1
@@ -2051,12 +2110,12 @@ Macro Statistics
  16-bit 4-to-1 multiplexer                             : 1
  2-bit 2-to-1 multiplexer                              : 9
  2-bit 3-to-1 multiplexer                              : 2
- 3-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 2
  3-bit 4-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 32
+ 32-bit 2-to-1 multiplexer                             : 33
  32-bit 3-to-1 multiplexer                             : 2
  32-bit 4-to-1 multiplexer                             : 9
- 4-bit 2-to-1 multiplexer                              : 9
+ 4-bit 2-to-1 multiplexer                              : 8
  48-bit 2-to-1 multiplexer                             : 5
  6-bit 2-to-1 multiplexer                              : 2
  64-bit 2-to-1 multiplexer                             : 3
@@ -2065,11 +2124,12 @@ Macro Statistics
 # Logic shifters                                       : 2
  32-bit shifter logical left                           : 1
  32-bit shifter logical right                          : 1
-# Tristates                                            : 864
- 1-bit tristate buffer                                 : 864
+# Tristates                                            : 896
+ 1-bit tristate buffer                                 : 896
 # FSMs                                                 : 5
-# Xors                                                 : 2
+# Xors                                                 : 3
  1-bit xor2                                            : 1
+ 1-bit xor4                                            : 1
  32-bit xor2                                           : 1
 
 =========================================================================
@@ -2357,11 +2417,11 @@ Macro Statistics
 # Accumulators                                         : 2
  4-bit up accumulator                                  : 1
  8-bit up accumulator                                  : 1
-# Registers                                            : 654
- Flip-Flops                                            : 654
+# Registers                                            : 688
+ Flip-Flops                                            : 688
 # Comparators                                          : 1
  32-bit comparator equal                               : 1
-# Multiplexers                                         : 152
+# Multiplexers                                         : 153
  1-bit 2-to-1 multiplexer                              : 51
  1-bit 4-to-1 multiplexer                              : 4
  1-bit 64-to-1 multiplexer                             : 1
@@ -2372,12 +2432,12 @@ Macro Statistics
  16-bit 4-to-1 multiplexer                             : 1
  2-bit 2-to-1 multiplexer                              : 9
  2-bit 3-to-1 multiplexer                              : 2
- 3-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 2
  3-bit 4-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 32
+ 32-bit 2-to-1 multiplexer                             : 33
  32-bit 3-to-1 multiplexer                             : 2
  32-bit 4-to-1 multiplexer                             : 9
- 4-bit 2-to-1 multiplexer                              : 9
+ 4-bit 2-to-1 multiplexer                              : 8
  48-bit 2-to-1 multiplexer                             : 5
  6-bit 2-to-1 multiplexer                              : 2
  64-bit 2-to-1 multiplexer                             : 3
@@ -2387,8 +2447,9 @@ Macro Statistics
  32-bit shifter logical left                           : 1
  32-bit shifter logical right                          : 1
 # FSMs                                                 : 5
-# Xors                                                 : 2
+# Xors                                                 : 3
  1-bit xor2                                            : 1
+ 1-bit xor4                                            : 1
  32-bit xor2                                           : 1
 
 =========================================================================
@@ -2396,6 +2457,8 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1710 - FF/Latch <ack7> (without init value) has a constant value of 0 in block <arbitre>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ack5> (without init value) has a constant value of 0 in block <arbitre>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <wr_adr_28> in Unit <HCU> is equivalent to the following FF/Latch, which will be removed : <write_adr_28> 
 INFO:Xst:2261 - The FF/Latch <kernel_state> in Unit <HCU> is equivalent to the following FF/Latch, which will be removed : <kernel> 
 INFO:Xst:2261 - The FF/Latch <wr_adr_29> in Unit <HCU> is equivalent to the following FF/Latch, which will be removed : <write_adr_29> 
@@ -2520,12 +2583,12 @@ Optimizing FSM <UART_Wrapper/Inst_uart_dispatch/FSM_0> on signal <current_state[
  fin    | 110
 --------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <My_arbitre/FSM_4> on signal <state[1:1]> with sequential encoding.
+Optimizing FSM <My_arbitre/FSM_4> on signal <state[1:2]> with one-hot encoding.
 ---------------------
  State   | Encoding
 ---------------------
- idle    | 0
- int1    | 1
+ idle    | 01
+ int1    | 10
  int2    | unreached
  int3    | unreached
  int4    | unreached
@@ -2556,9 +2619,9 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wr_adr_13> has a co
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wr_adr_12> has a constant value of 0 in block <HCU>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <it_homade_1> (without init value) has a constant value of 0 in block <arbitre>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <it_homade_2> (without init value) has a constant value of 0 in block <arbitre>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2040 - Unit HMaster: 32 multi-source signals are replaced by logic (pull-up yes): Tbusst<0>, Tbusst<10>, Tbusst<11>, Tbusst<12>, Tbusst<13>, Tbusst<14>, Tbusst<15>, Tbusst<16>, Tbusst<17>, Tbusst<18>, Tbusst<19>, Tbusst<1>, Tbusst<20>, Tbusst<21>, Tbusst<22>, Tbusst<23>, Tbusst<24>, Tbusst<25>, Tbusst<26>, Tbusst<27>, Tbusst<28>, Tbusst<29>, Tbusst<2>, Tbusst<30>, Tbusst<31>, Tbusst<3>, Tbusst<4>, Tbusst<5>, Tbusst<6>, Tbusst<7>, Tbusst<8>, Tbusst<9>.
 WARNING:Xst:2042 - Unit IP_waitbt: 32 internal tristates are replaced by logic (pull-up yes): Tout<0>, Tout<10>, Tout<11>, Tout<12>, Tout<13>, Tout<14>, Tout<15>, Tout<16>, Tout<17>, Tout<18>, Tout<19>, Tout<1>, Tout<20>, Tout<21>, Tout<22>, Tout<23>, Tout<24>, Tout<25>, Tout<26>, Tout<27>, Tout<28>, Tout<29>, Tout<2>, Tout<30>, Tout<31>, Tout<3>, Tout<4>, Tout<5>, Tout<6>, Tout<7>, Tout<8>, Tout<9>.
 WARNING:Xst:2042 - Unit IP_datastack: 32 internal tristates are replaced by logic (pull-up yes): Tout<0>, Tout<10>, Tout<11>, Tout<12>, Tout<13>, Tout<14>, Tout<15>, Tout<16>, Tout<17>, Tout<18>, Tout<19>, Tout<1>, Tout<20>, Tout<21>, Tout<22>, Tout<23>, Tout<24>, Tout<25>, Tout<26>, Tout<27>, Tout<28>, Tout<29>, Tout<2>, Tout<30>, Tout<31>, Tout<3>, Tout<4>, Tout<5>, Tout<6>, Tout<7>, Tout<8>, Tout<9>.
-WARNING:Xst:2042 - Unit IP_Tic: 32 internal tristates are replaced by logic (pull-up yes): Tout<0>, Tout<10>, Tout<11>, Tout<12>, Tout<13>, Tout<14>, Tout<15>, Tout<16>, Tout<17>, Tout<18>, Tout<19>, Tout<1>, Tout<20>, Tout<21>, Tout<22>, Tout<23>, Tout<24>, Tout<25>, Tout<26>, Tout<27>, Tout<28>, Tout<29>, Tout<2>, Tout<30>, Tout<31>, Tout<3>, Tout<4>, Tout<5>, Tout<6>, Tout<7>, Tout<8>, Tout<9>.
 WARNING:Xst:2042 - Unit IP_switch: 32 internal tristates are replaced by logic (pull-up yes): Tout<0>, Tout<10>, Tout<11>, Tout<12>, Tout<13>, Tout<14>, Tout<15>, Tout<16>, Tout<17>, Tout<18>, Tout<19>, Tout<1>, Tout<20>, Tout<21>, Tout<22>, Tout<23>, Tout<24>, Tout<25>, Tout<26>, Tout<27>, Tout<28>, Tout<29>, Tout<2>, Tout<30>, Tout<31>, Tout<3>, Tout<4>, Tout<5>, Tout<6>, Tout<7>, Tout<8>, Tout<9>.
 WARNING:Xst:2040 - Unit IP_Funit: 32 multi-source signals are replaced by logic (pull-up yes): Tout<0>, Tout<10>, Tout<11>, Tout<12>, Tout<13>, Tout<14>, Tout<15>, Tout<16>, Tout<17>, Tout<18>, Tout<19>, Tout<1>, Tout<20>, Tout<21>, Tout<22>, Tout<23>, Tout<24>, Tout<25>, Tout<26>, Tout<27>, Tout<28>, Tout<29>, Tout<2>, Tout<30>, Tout<31>, Tout<3>, Tout<4>, Tout<5>, Tout<6>, Tout<7>, Tout<8>, Tout<9>.
 WARNING:Xst:2042 - Unit IP_stack: 96 internal tristates are replaced by logic (pull-up yes): N2out<0>, N2out<10>, N2out<11>, N2out<12>, N2out<13>, N2out<14>, N2out<15>, N2out<16>, N2out<17>, N2out<18>, N2out<19>, N2out<1>, N2out<20>, N2out<21>, N2out<22>, N2out<23>, N2out<24>, N2out<25>, N2out<26>, N2out<27>, N2out<28>, N2out<29>, N2out<2>, N2out<30>, N2out<31>, N2out<3>, N2out<4>, N2out<5>, N2out<6>, N2out<7>, N2out<8>, N2out<9>, Nout<0>, Nout<10>, Nout<11>, Nout<12>, Nout<13>, Nout<14>, Nout<15>, Nout<16>, Nout<17>, Nout<18>, Nout<19>, Nout<1>, Nout<20>, Nout<21>, Nout<22>, Nout<23>, Nout<24>, Nout<25>, Nout<26>, Nout<27>, Nout<28>, Nout<29>, Nout<2>, Nout<30>, Nout<31>, Nout<3>, Nout<4>, Nout<5>, Nout<6>, Nout<7>, Nout<8>, Nout<9>, Tout<0>, Tout<10>, Tout<11>, Tout<12>, Tout<13>, Tout<14>, Tout<15>, Tout<16>, Tout<17>, Tout<18>, Tout<19>, Tout<1>, Tout<20>, Tout<21>, Tout<22>, Tout<23>, Tout<24>, Tout<25>, Tout<26>, Tout<27>, Tout<28>, Tout<29>, Tout<2>, Tout<30>, Tout<31>, Tout<3>, Tout<4>, Tout<5>, Tout<6>, Tout<7>, Tout<8>, Tout<9>.
@@ -2592,6 +2655,8 @@ Optimizing unit <reg0_2> ...
 Optimizing unit <IP_delay> ...
 
 Optimizing unit <reg0c_2> ...
+
+Optimizing unit <random> ...
 
 Optimizing unit <uart_rx> ...
 
@@ -2688,15 +2753,13 @@ FlipFlop my_Master/HCU_Master/Ipcode_0 has been replicated 1 time(s)
 FlipFlop my_Master/HCU_Master/Ipcode_1 has been replicated 1 time(s)
 FlipFlop my_Master/HCU_Master/Ipcode_2 has been replicated 1 time(s)
 FlipFlop my_Master/HCU_Master/Ipcode_3 has been replicated 1 time(s)
-FlipFlop my_Master/HCU_Master/Ipcode_4 has been replicated 2 time(s)
-FlipFlop my_Master/HCU_Master/PC_adr_0 has been replicated 1 time(s)
-FlipFlop my_Master/HCU_Master/PC_adr_1 has been replicated 1 time(s)
+FlipFlop my_Master/HCU_Master/Ipcode_4 has been replicated 1 time(s)
 FlipFlop my_Master/HCU_Master/PC_adr_2 has been replicated 3 time(s)
 FlipFlop my_Master/HCU_Master/PC_adr_3 has been replicated 3 time(s)
 FlipFlop my_Master/HCU_Master/PC_adr_4 has been replicated 3 time(s)
-FlipFlop my_Master/HCU_Master/PC_adr_5 has been replicated 4 time(s)
-FlipFlop my_Master/HCU_Master/PC_adr_6 has been replicated 4 time(s)
-FlipFlop my_Master/HCU_Master/PC_adr_7 has been replicated 4 time(s)
+FlipFlop my_Master/HCU_Master/PC_adr_5 has been replicated 3 time(s)
+FlipFlop my_Master/HCU_Master/PC_adr_6 has been replicated 3 time(s)
+FlipFlop my_Master/HCU_Master/PC_adr_7 has been replicated 3 time(s)
 FlipFlop my_Master/Mwaitbtn.Inst_IPwaitBt/current_state_FSM_FFd1 has been replicated 1 time(s)
 FlipFlop my_Master/Stack_Master/update_counter/count_out_0 has been replicated 4 time(s)
 FlipFlop my_Master/Stack_Master/update_counter/count_out_1 has been replicated 4 time(s)
@@ -2711,8 +2774,8 @@ Unit <Nexys3v6> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 625
- Flip-Flops                                            : 625
+# Registers                                            : 651
+ Flip-Flops                                            : 651
 # Shift Registers                                      : 1
  2-bit shift register                                  : 1
 
@@ -2737,32 +2800,32 @@ Top Level Output File Name         : Nexys3v6.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4350
+# BELS                             : 4429
 #      AND2                        : 1
 #      AND3                        : 7
 #      GND                         : 5
-#      INV                         : 29
+#      INV                         : 24
 #      LUT1                        : 111
-#      LUT2                        : 244
-#      LUT3                        : 226
-#      LUT4                        : 660
-#      LUT5                        : 549
-#      LUT6                        : 852
+#      LUT2                        : 257
+#      LUT3                        : 200
+#      LUT4                        : 715
+#      LUT5                        : 621
+#      LUT6                        : 831
 #      MULT_AND                    : 136
-#      MUXCY                       : 946
-#      MUXF7                       : 46
+#      MUXCY                       : 944
+#      MUXF7                       : 39
 #      OR2                         : 4
 #      OR3                         : 1
 #      VCC                         : 2
 #      XORCY                       : 531
-# FlipFlops/Latches                : 626
+# FlipFlops/Latches                : 652
 #      FD                          : 89
 #      FDCE                        : 36
-#      FDE                         : 300
+#      FDE                         : 331
 #      FDE_1                       : 4
-#      FDR                         : 111
+#      FDR                         : 102
 #      FDR_1                       : 40
-#      FDRE                        : 16
+#      FDRE                        : 20
 #      FDRE_1                      : 24
 #      FDS                         : 5
 #      FDSE                        : 1
@@ -2791,18 +2854,18 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             626  out of  18224     3%  
- Number of Slice LUTs:                 2960  out of   9112    32%  
-    Number used as Logic:              2671  out of   9112    29%  
+ Number of Slice Registers:             652  out of  18224     3%  
+ Number of Slice LUTs:                 3048  out of   9112    33%  
+    Number used as Logic:              2759  out of   9112    30%  
     Number used as Memory:              289  out of   2176    13%  
        Number used as RAM:              288
        Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3035
-   Number with an unused Flip Flop:    2409  out of   3035    79%  
-   Number with an unused LUT:            75  out of   3035     2%  
-   Number of fully used LUT-FF pairs:   551  out of   3035    18%  
+ Number of LUT Flip Flop pairs used:   3118
+   Number with an unused Flip Flop:    2466  out of   3118    79%  
+   Number with an unused LUT:            70  out of   3118     2%  
+   Number of fully used LUT-FF pairs:   582  out of   3118    18%  
    Number of unique control sets:        37
 
 IO Utilization: 
@@ -2835,7 +2898,7 @@ Clock Signal                             | Clock buffer(FF name)                
 -----------------------------------------+----------------------------------------+-------+
 mclk                                     | clk_gen/dcm_sp_inst:CLK0               | 0     |
 mclk                                     | clk_gen/dcm_sp_inst:CLKDV              | 0     |
-clk50                                    | NONE(next_state)                       | 761   |
+clk50                                    | NONE(next_state)                       | 787   |
 clk100                                   | NONE(D7seg_display/XLXI_34/XLXI_1)     | 54    |
 UART_Wrapper/uart_baudClock_inst/baud_clk| NONE(UART_Wrapper/Inst_uart_rx/rx_busy)| 13    |
 -----------------------------------------+----------------------------------------+-------+
@@ -2849,7 +2912,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 10.305ns (Maximum Frequency: 97.045MHz)
+   Minimum period: 10.454ns (Maximum Frequency: 95.661MHz)
    Minimum input arrival time before clock: 1.903ns
    Maximum output required time after clock: 6.249ns
    Maximum combinational path delay: No path found
@@ -2860,34 +2923,33 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk50'
-  Clock period: 10.305ns (frequency: 97.045MHz)
-  Total number of paths / destination ports: 758337618 / 2813
+  Clock period: 10.454ns (frequency: 95.661MHz)
+  Total number of paths / destination ports: 758527887 / 2865
 -------------------------------------------------------------------------
-Delay:               10.305ns (Levels of Logic = 10)
-  Source:            my_Master/HCU_Master/PC_adr_2_3 (FF)
-  Destination:       my_Master/HCU_Master/PC_adr_2 (FF)
+Delay:               10.454ns (Levels of Logic = 9)
+  Source:            my_Master/Mdelay.Inst_IP_delay/IPdone (FF)
+  Destination:       my_Master/Stack_Master/R2/q_31 (FF)
   Source Clock:      clk50 rising
   Destination Clock: clk50 rising
 
-  Data Path: my_Master/HCU_Master/PC_adr_2_3 to my_Master/HCU_Master/PC_adr_2
+  Data Path: my_Master/Mdelay.Inst_IP_delay/IPdone to my_Master/Stack_Master/R2/q_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             18   0.447   1.049  my_Master/HCU_Master/PC_adr_2_3 (my_Master/HCU_Master/PC_adr_2_3)
-     RAM64X1D:DPRA0->DPO    3   0.205   0.879  my_Master/Inst_mem_Master/multi_bank[34].bank/Mram_RAM64bit (my_Master/Instbus<34>)
-     LUT6:I3->O            6   0.205   1.109  my_Master/HCU_Master/Mmux_PC_adr[1]_Prog_instr[15]_wide_mux_9_OUT101 (my_Master/HCU_Master/PC_adr[1]_Prog_instr[15]_wide_mux_9_OUT<2>)
-     LUT6:I0->O            6   0.203   0.849  my_Master/HCU_Master/PC_adr[1]_PC_adr[1]_OR_387_o11 (my_Master/HCU_Master/PC_adr[1]_PC_adr[1]_OR_387_o1)
-     LUT6:I4->O           21   0.203   1.114  my_Master/HCU_Master/PC_adr[1]_GND_33_o_equal_23_o<15>1 (my_Master/HCU_Master/PC_adr[1]_GND_33_o_equal_23_o)
-     LUT4:I3->O            3   0.205   0.755  my_Master/HCU_Master/Mmux_PC_adr[31]_retbus[31]_mux_23_OUT1101 (my_Master/HCU_Master/N16)
-     LUT6:I4->O            1   0.203   0.580  my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1466 (my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1465)
-     LUT6:I5->O            1   0.205   0.580  my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1467 (my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1466)
-     LUT6:I5->O            2   0.205   0.864  my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1468_SW0 (N655)
-     LUT6:I2->O            1   0.203   0.000  my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1468_G (N702)
-     MUXF7:I1->O           4   0.140   0.000  my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1468 (my_Master/HCU_Master/etat[1]_Startadres[31]_mux_119_OUT<2>)
-     FDR:D                     0.102          my_Master/HCU_Master/PC_adr_2
+     FD:C->Q               4   0.447   0.684  my_Master/Mdelay.Inst_IP_delay/IPdone (my_Master/Mdelay.Inst_IP_delay/IPdone)
+     LUT2:I1->O            5   0.205   1.079  my_Master/IPd1 (my_Master/IPd)
+     OR3:I0->O            58   0.203   1.601  my_Master/Stack_Master/XLXI_91 (my_Master/Stack_Master/lastcycle)
+     LUT5:I4->O            4   0.205   0.912  my_Master/Stack_Master/sel_in/control<23>211 (my_Master/Stack_Master/sel_in/N97)
+     LUT6:I3->O            2   0.205   0.721  my_Master/Stack_Master/sel_in/Madd_adr2_lut<2>1 (my_Master/Stack_Master/sel_in/Madd_adr2_lut<2>)
+     LUT6:I4->O            2   0.203   0.617  my_Master/Stack_Master/sel_in/Madd_adr2_xor<3>121 (my_Master/Stack_Master/sel_in/N38)
+     LUT3:I2->O           14   0.205   0.957  my_Master/Stack_Master/sel_in/Madd_adr2_xor<3>11_1 (my_Master/Stack_Master/sel_in/Madd_adr2_xor<3>11)
+     RAM16X1S:A3->O        3   0.205   0.651  my_Master/Stack_Master/ram2/Mram_ram32 (my_Master/Stack_Master/XLXN_41<31>)
+     LUT6:I5->O            1   0.205   0.808  my_Master/Tbusst<31>_MUXCY_11_SW10 (N604)
+     LUT5:I2->O            1   0.205   0.000  my_Master/Stack_Master/muxR2/Mmux_Y251 (my_Master/Stack_Master/R2in<31>)
+     FDE:D                     0.102          my_Master/Stack_Master/R2/q_31
     ----------------------------------------
-    Total                     10.305ns (2.526ns logic, 7.779ns route)
-                                       (24.5% logic, 75.5% route)
+    Total                     10.454ns (2.424ns logic, 8.030ns route)
+                                       (23.2% logic, 76.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk100'
@@ -2914,27 +2976,26 @@ Delay:               3.831ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'UART_Wrapper/uart_baudClock_inst/baud_clk'
-  Clock period: 4.135ns (frequency: 241.829MHz)
-  Total number of paths / destination ports: 138 / 27
+  Clock period: 3.939ns (frequency: 253.875MHz)
+  Total number of paths / destination ports: 166 / 31
 -------------------------------------------------------------------------
-Delay:               4.135ns (Levels of Logic = 3)
-  Source:            UART_Wrapper/Inst_uart_rx/rx_cnt_3 (FF)
-  Destination:       UART_Wrapper/Inst_uart_rx/rx_cnt_3 (FF)
+Delay:               3.939ns (Levels of Logic = 2)
+  Source:            UART_Wrapper/Inst_uart_rx/rx_sample_cnt_2 (FF)
+  Destination:       UART_Wrapper/Inst_uart_rx/rx_busy (FF)
   Source Clock:      UART_Wrapper/uart_baudClock_inst/baud_clk rising
   Destination Clock: UART_Wrapper/uart_baudClock_inst/baud_clk rising
 
-  Data Path: UART_Wrapper/Inst_uart_rx/rx_cnt_3 to UART_Wrapper/Inst_uart_rx/rx_cnt_3
+  Data Path: UART_Wrapper/Inst_uart_rx/rx_sample_cnt_2 to UART_Wrapper/Inst_uart_rx/rx_busy
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              7   0.447   1.118  UART_Wrapper/Inst_uart_rx/rx_cnt_3 (UART_Wrapper/Inst_uart_rx/rx_cnt_3)
-     LUT5:I0->O            3   0.203   0.898  UART_Wrapper/Inst_uart_rx/rx_d2_GND_7_o_AND_3_o1 (UART_Wrapper/Inst_uart_rx/rx_d2_GND_7_o_AND_3_o)
-     LUT6:I2->O            2   0.203   0.961  UART_Wrapper/Inst_uart_rx/Mmux_rx_cnt[3]_rx_cnt[3]_mux_10_OUT211 (UART_Wrapper/Inst_uart_rx/N4)
-     LUT6:I1->O            1   0.203   0.000  UART_Wrapper/Inst_uart_rx/Mmux_rx_cnt[3]_rx_cnt[3]_mux_10_OUT41 (UART_Wrapper/Inst_uart_rx/rx_cnt[3]_rx_cnt[3]_mux_10_OUT<3>)
-     FDR:D                     0.102          UART_Wrapper/Inst_uart_rx/rx_cnt_3
+     FDRE:C->Q             4   0.447   0.931  UART_Wrapper/Inst_uart_rx/rx_sample_cnt_2 (UART_Wrapper/Inst_uart_rx/rx_sample_cnt_2)
+     LUT4:I0->O            8   0.203   1.147  UART_Wrapper/Inst_uart_rx/GND_7_o_GND_7_o_equal_4_o<3>1 (UART_Wrapper/Inst_uart_rx/GND_7_o_GND_7_o_equal_4_o)
+     LUT5:I0->O            1   0.203   0.579  UART_Wrapper/Inst_uart_rx/Reset_OR_DriverANDClockEnable1 (UART_Wrapper/Inst_uart_rx/Reset_OR_DriverANDClockEnable)
+     FDRE:R                    0.430          UART_Wrapper/Inst_uart_rx/rx_busy
     ----------------------------------------
-    Total                      4.135ns (1.158ns logic, 2.977ns route)
-                                       (28.0% logic, 72.0% route)
+    Total                      3.939ns (1.283ns logic, 2.656ns route)
+                                       (32.6% logic, 67.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk100'
@@ -3048,7 +3109,7 @@ Clock to Setup on destination clock UART_Wrapper/uart_baudClock_inst/baud_clk
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-UART_Wrapper/uart_baudClock_inst/baud_clk|    4.135|         |         |         |
+UART_Wrapper/uart_baudClock_inst/baud_clk|    3.939|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk100
@@ -3057,7 +3118,7 @@ Clock to Setup on destination clock clk100
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 clk100         |    3.831|         |         |         |
-clk50          |    2.930|         |         |         |
+clk50          |    2.937|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk50
@@ -3065,23 +3126,23 @@ Clock to Setup on destination clock clk50
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-UART_Wrapper/uart_baudClock_inst/baud_clk|    1.322|         |         |         |
+UART_Wrapper/uart_baudClock_inst/baud_clk|    1.263|         |         |         |
 clk100                                   |    1.780|         |         |         |
-clk50                                    |   10.305|    4.198|    4.718|         |
+clk50                                    |   10.454|    4.198|    4.794|         |
 -----------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 22.65 secs
+Total REAL time to Xst completion: 25.00 secs
+Total CPU time to Xst completion: 23.89 secs
  
 --> 
 
 
-Total memory usage is 461940 kilobytes
+Total memory usage is 463756 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  165 (   0 filtered)
+Number of warnings :  168 (   0 filtered)
 Number of infos    :  203 (   0 filtered)
 

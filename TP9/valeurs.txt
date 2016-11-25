@@ -1,0 +1,7 @@
+Number of Slice Registers
+645
+3%
+
+Number of Slice LUTs
+2,828
+31%

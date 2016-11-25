@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map M.81d on Fri Nov 04 10:56:11 2016
+// Written by: Map M.81d on Fri Nov 25 09:16:19 2016
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -46,38 +46,6 @@ TIMEGRP clk_gen_clkdv = BEL "next_state" BEL "reset_Homade" BEL
         "UART_Wrapper/pulse_shift/XLXI_1" BEL
         "UART_Wrapper/pulse_shift/XLXI_2" BEL
         "UART_Wrapper/pulse_shift/XLXI_3" BEL "clk_gen/clkout2_buf" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_0" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_1" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_2" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_3" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_4" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_5" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_6" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_7" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_8" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_9" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_10" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_11" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_12" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_13" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_14" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_15" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_16" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_17" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_18" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_19" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_20" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_21" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_22" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_23" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_24" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_25" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_26" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_27" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_28" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_29" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_30" BEL
-        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_31" BEL
         "my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/stack_ptr_0" BEL
         "my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/stack_ptr_1" BEL
         "my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/stack_ptr_2" BEL
@@ -112,7 +80,39 @@ TIMEGRP clk_gen_clkdv = BEL "next_state" BEL "reset_Homade" BEL
         "my_Master/Inst_add_gen/count_4" BEL "my_Master/Inst_add_gen/count_3"
         BEL "my_Master/Inst_add_gen/count_2" BEL
         "my_Master/Inst_add_gen/count_1" BEL "my_Master/Inst_add_gen/count_0"
-        BEL "my_Master/rst_mem/XLXI_1" BEL "my_Master/rst_mem/XLXI_2" BEL
+        BEL "my_Master/MTic.Inst_IP_Tic/Tic_count/q_31" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_30" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_29" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_28" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_27" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_26" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_25" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_24" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_23" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_22" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_21" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_20" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_19" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_18" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_17" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_16" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_15" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_14" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_13" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_12" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_11" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_10" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_9" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_8" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_7" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_6" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_5" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_4" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_3" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_2" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_1" BEL
+        "my_Master/MTic.Inst_IP_Tic/Tic_count/q_0" BEL
+        "my_Master/rst_mem/XLXI_1" BEL "my_Master/rst_mem/XLXI_2" BEL
         "my_Master/BufSwitch_reg/q_7" BEL "my_Master/BufSwitch_reg/q_6" BEL
         "my_Master/BufSwitch_reg/q_5" BEL "my_Master/BufSwitch_reg/q_4" BEL
         "my_Master/BufSwitch_reg/q_3" BEL "my_Master/BufSwitch_reg/q_2" BEL
@@ -501,6 +501,38 @@ TIMEGRP clk_gen_clkdv = BEL "next_state" BEL "reset_Homade" BEL
         "my_Master/Mdatastack.Inst_IPdataStack/DatastackTop_reg/q_2" BEL
         "my_Master/Mdatastack.Inst_IPdataStack/DatastackTop_reg/q_1" BEL
         "my_Master/Mdatastack.Inst_IPdataStack/DatastackTop_reg/q_0" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_31" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_30" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_29" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_28" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_27" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_26" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_25" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_24" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_23" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_22" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_21" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_20" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_19" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_18" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_17" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_16" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_15" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_14" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_13" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_12" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_11" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_10" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_9" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_8" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_7" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_6" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_5" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_4" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_3" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_2" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_1" BEL
+        "my_Master/Mrdm.Inst_IP_Rdm/myRandom/sortie_0" BEL
         "UART_Wrapper/Inst_uart_rx/pulse_shift/XLXI_1" BEL
         "UART_Wrapper/Inst_uart_rx/pulse_shift/XLXI_2" BEL
         "UART_Wrapper/Inst_uart_rx/pulse_shift/XLXI_3" BEL
@@ -592,42 +624,36 @@ TIMEGRP clk_gen_clkdv = BEL "next_state" BEL "reset_Homade" BEL
         "UART_Wrapper/Inst_uart_dispatch/buf64e" BEL
         "My_arbitre/state_FSM_FFd1" BEL "My_arbitre/it_homade_0" BEL
         "my_Master/Mwaitbtn.Inst_IPwaitBt/current_state_FSM_FFd1_1" BEL
-        "my_Master/HCU_Master/Ipcode_4_1" BEL
         "my_Master/Stack_Master/update_counter/count_out_0_1" BEL
         "my_Master/Stack_Master/update_counter/count_out_1_1" BEL
+        "my_Master/HCU_Master/Ipcode_4_1" BEL
         "my_Master/Stack_Master/update_counter/count_out_1_2" BEL
         "my_Master/Stack_Master/update_counter/count_out_1_3" BEL
+        "my_Master/HCU_Master/PC_adr_7_1" BEL
+        "my_Master/HCU_Master/PC_adr_7_2" BEL
+        "my_Master/HCU_Master/PC_adr_7_3" BEL
         "my_Master/HCU_Master/PC_adr_6_1" BEL
         "my_Master/HCU_Master/PC_adr_6_2" BEL
         "my_Master/HCU_Master/PC_adr_6_3" BEL
         "my_Master/HCU_Master/PC_adr_5_1" BEL
         "my_Master/HCU_Master/PC_adr_5_2" BEL
         "my_Master/HCU_Master/PC_adr_5_3" BEL
-        "my_Master/HCU_Master/PC_adr_7_1" BEL
-        "my_Master/HCU_Master/PC_adr_7_2" BEL
-        "my_Master/HCU_Master/PC_adr_7_3" BEL
         "my_Master/HCU_Master/PC_adr_4_1" BEL
         "my_Master/HCU_Master/PC_adr_4_2" BEL
         "my_Master/HCU_Master/PC_adr_4_3" BEL
         "my_Master/HCU_Master/PC_adr_3_1" BEL
         "my_Master/HCU_Master/PC_adr_3_2" BEL
         "my_Master/HCU_Master/PC_adr_3_3" BEL
-        "my_Master/Stack_Master/update_counter/count_out_0_2" BEL
-        "my_Master/Stack_Master/update_counter/count_out_0_3" BEL
+        "my_Master/HCU_Master/Ipcode_0_1" BEL
         "my_Master/HCU_Master/PC_adr_2_1" BEL
         "my_Master/HCU_Master/PC_adr_2_2" BEL
         "my_Master/HCU_Master/PC_adr_2_3" BEL
         "my_Master/Stack_Master/update_counter/count_out_1_4" BEL
         "my_Master/HCU_Master/Ipcode_2_1" BEL
-        "my_Master/Stack_Master/update_counter/count_out_0_4" BEL
+        "my_Master/Stack_Master/update_counter/count_out_0_2" BEL
+        "my_Master/Stack_Master/update_counter/count_out_0_3" BEL
         "my_Master/HCU_Master/Ipcode_1_1" BEL
-        "my_Master/HCU_Master/Ipcode_4_2" BEL
-        "my_Master/HCU_Master/PC_adr_1_1" BEL
-        "my_Master/HCU_Master/PC_adr_0_1" BEL
-        "my_Master/HCU_Master/PC_adr_7_4" BEL
-        "my_Master/HCU_Master/PC_adr_6_4" BEL
-        "my_Master/HCU_Master/PC_adr_5_4" BEL
-        "my_Master/HCU_Master/Ipcode_0_1" BEL
+        "my_Master/Stack_Master/update_counter/count_out_0_4" BEL
         "my_Master/HCU_Master/Ipcode_3_1" BEL
         "my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM61/SP"
         BEL
