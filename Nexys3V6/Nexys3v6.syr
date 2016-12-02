@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: Nexys3v6.prj
@@ -250,6 +250,9 @@ Parsing architecture <Behavioral> of entity <add_gen>.
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/../TP8_ISE/IP_Rdm.vhd" into library work
 Parsing entity <IP_Rdm>.
 Parsing architecture <Behavioral> of entity <ip_rdm>.
+Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/../TP10/IP_fibo.vhd" into library work
+Parsing entity <IP_fibo>.
+Parsing architecture <dummyfibo> of entity <ip_fibo>.
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/x7seg.vhd" into library work
 Parsing entity <x7seg>.
 Parsing architecture <Behavioral> of entity <x7seg>.
@@ -367,7 +370,7 @@ WARNING:HDLCompiler:92 - "/home/m1/hembert/AEO/Nexys3V6/uart_dispatch.vhd" Line 
 WARNING:HDLCompiler:92 - "/home/m1/hembert/AEO/Nexys3V6/uart_dispatch.vhd" Line 182: buf64 should be on the sensitivity list of the process
 
 Elaborating entity <HMaster> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "/home/m1/hembert/AEO/Nexys3V6/Hmaster.vhd" Line 75: Using initial value '0' for ipdft since it is never assigned
+WARNING:HDLCompiler:871 - "/home/m1/hembert/AEO/Nexys3V6/Hmaster.vhd" Line 75: Using initial value '0' for ipdc32 since it is never assigned
 WARNING:HDLCompiler:746 - "/home/m1/hembert/AEO/Nexys3V6/Hmaster.vhd" Line 90: Range is empty (null range)
 WARNING:HDLCompiler:746 - "/home/m1/hembert/AEO/Nexys3V6/Hmaster.vhd" Line 92: Range is empty (null range)
 WARNING:HDLCompiler:746 - "/home/m1/hembert/AEO/Nexys3V6/Hmaster.vhd" Line 95: Range is empty (null range)
@@ -430,6 +433,8 @@ Elaborating entity <reg1c> (architecture <reg1c>) with generics from library <wo
 WARNING:HDLCompiler:92 - "/home/m1/hembert/AEO/Nexys3V6/IPwaitBT1.vhd" Line 132: btnout should be on the sensitivity list of the process
 WARNING:HDLCompiler:92 - "/home/m1/hembert/AEO/Nexys3V6/IPwaitBT1.vhd" Line 141: current_state should be on the sensitivity list of the process
 INFO:HDLCompiler:679 - "/home/m1/hembert/AEO/Nexys3V6/IPwaitBT1.vhd" Line 161. Case statement is complete. others clause is never selected
+
+Elaborating entity <IP_fibo> (architecture <dummyfibo>) with generics from library <work>.
 
 Elaborating entity <IP_delay> (architecture <FSM>) with generics from library <work>.
 WARNING:HDLCompiler:92 - "/home/m1/hembert/AEO/Nexys3V6/IPWait.vhd" Line 77: tin should be on the sensitivity list of the process
@@ -945,6 +950,48 @@ Synthesizing Unit <reg1c_1>.
 	inferred   5 D-type flip-flop(s).
 Unit <reg1c_1> synthesized.
 
+Synthesizing Unit <IP_fibo>.
+    Related source file is "/home/m1/hembert/AEO/TP10/IP_fibo.vhd".
+        mycode = "10000000011"
+WARNING:Xst:647 - Input <Tin<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit tristate buffer for signal <Tout<31>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<30>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<29>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<28>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<27>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<26>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<25>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<24>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<23>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<22>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<21>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<20>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<19>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<18>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<17>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<16>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<15>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<14>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<13>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<12>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<11>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<10>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<9>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<8>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<7>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<6>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<5>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<4>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<3>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<2>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<1>> created at line 45
+    Found 1-bit tristate buffer for signal <Tout<0>> created at line 45
+    Summary:
+	inferred  32 Tristate(s).
+Unit <IP_fibo> synthesized.
+
 Synthesizing Unit <IP_delay>.
     Related source file is "/home/m1/hembert/AEO/Nexys3V6/IPWait.vhd".
         Mycode = "10000000001"
@@ -963,8 +1010,8 @@ Synthesizing Unit <IP_delay>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit subtractor for signal <GND_140_o_GND_140_o_sub_4_OUT<31:0>> created at line 77.
-    Found 32-bit subtractor for signal <GND_140_o_GND_140_o_sub_7_OUT<31:0>> created at line 87.
+    Found 32-bit subtractor for signal <GND_173_o_GND_173_o_sub_4_OUT<31:0>> created at line 77.
+    Found 32-bit subtractor for signal <GND_173_o_GND_173_o_sub_7_OUT<31:0>> created at line 87.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  33 D-type flip-flop(s).
@@ -1765,7 +1812,7 @@ Synthesizing Unit <dstack>.
     Found 16x32-bit dual-port RAM <Mram_RAM> for signal <RAM>.
     Found 4-bit register for signal <stack_ptr>.
     Found 5-bit adder for signal <n0015> created at line 59.
-    Found 4-bit adder for signal <stack_ptr[3]_GND_852_o_add_6_OUT> created at line 74.
+    Found 4-bit adder for signal <stack_ptr[3]_GND_885_o_add_6_OUT> created at line 74.
     Summary:
 	inferred   2 RAM(s).
 	inferred   2 Adder/Subtractor(s).
@@ -1949,7 +1996,7 @@ Unit <x7seg> synthesized.
 Synthesizing Unit <CB2CE_HXILINX_afficheur>.
     Related source file is "/home/m1/hembert/AEO/Nexys3V6/afficheur.vhf".
     Found 2-bit register for signal <COUNT>.
-    Found 2-bit adder for signal <COUNT[1]_GND_996_o_add_0_OUT> created at line 94.
+    Found 2-bit adder for signal <COUNT[1]_GND_1029_o_add_0_OUT> created at line 94.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   2 D-type flip-flop(s).
@@ -1999,7 +2046,7 @@ Unit <Enable190> synthesized.
 Synthesizing Unit <CB16CE_HXILINX_Enable190>.
     Related source file is "/home/m1/hembert/AEO/Nexys3V6/Enable190.vhf".
     Found 16-bit register for signal <COUNT>.
-    Found 16-bit adder for signal <COUNT[15]_GND_1001_o_add_0_OUT> created at line 105.
+    Found 16-bit adder for signal <COUNT[15]_GND_1034_o_add_0_OUT> created at line 105.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  16 D-type flip-flop(s).
@@ -2009,7 +2056,7 @@ Unit <CB16CE_HXILINX_Enable190> synthesized.
 Synthesizing Unit <CB4CE_HXILINX_Enable190>.
     Related source file is "/home/m1/hembert/AEO/Nexys3V6/Enable190.vhf".
     Found 4-bit register for signal <COUNT>.
-    Found 4-bit adder for signal <COUNT[3]_GND_1002_o_add_0_OUT> created at line 57.
+    Found 4-bit adder for signal <COUNT[3]_GND_1035_o_add_0_OUT> created at line 57.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   4 D-type flip-flop(s).
@@ -2049,14 +2096,14 @@ INFO:Xst:1799 - State release is never reached in FSM <state>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Summary:
-	inferred   6 D-type flip-flop(s).
-	inferred   4 Multiplexer(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <arbitre> synthesized.
-RTL-Simplification CPUSTAT: 0.19 
-RTL-BasicInf CPUSTAT: 0.46 
-RTL-BasicOpt CPUSTAT: 0.00 
-RTL-Remain-Bus CPUSTAT: 0.02 
+RTL-Simplification CPUSTAT: 0.17 
+RTL-BasicInf CPUSTAT: 0.48 
+RTL-BasicOpt CPUSTAT: 0.01 
+RTL-Remain-Bus CPUSTAT: 0.04 
 
 =========================================================================
 HDL Synthesis Report
@@ -2082,8 +2129,8 @@ Macro Statistics
  5-bit adder                                           : 1
  7-bit adder                                           : 1
  8-bit adder                                           : 1
-# Registers                                            : 67
- 1-bit register                                        : 25
+# Registers                                            : 68
+ 1-bit register                                        : 26
  11-bit register                                       : 2
  12-bit register                                       : 2
  13-bit register                                       : 1
@@ -2099,7 +2146,7 @@ Macro Statistics
  8-bit register                                        : 4
 # Comparators                                          : 1
  32-bit comparator equal                               : 1
-# Multiplexers                                         : 156
+# Multiplexers                                         : 155
  1-bit 2-to-1 multiplexer                              : 54
  1-bit 4-to-1 multiplexer                              : 4
  1-bit 64-to-1 multiplexer                             : 1
@@ -2110,7 +2157,7 @@ Macro Statistics
  16-bit 4-to-1 multiplexer                             : 1
  2-bit 2-to-1 multiplexer                              : 9
  2-bit 3-to-1 multiplexer                              : 2
- 3-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 1
  3-bit 4-to-1 multiplexer                              : 1
  32-bit 2-to-1 multiplexer                             : 33
  32-bit 3-to-1 multiplexer                             : 2
@@ -2124,8 +2171,8 @@ Macro Statistics
 # Logic shifters                                       : 2
  32-bit shifter logical left                           : 1
  32-bit shifter logical right                          : 1
-# Tristates                                            : 896
- 1-bit tristate buffer                                 : 896
+# Tristates                                            : 928
+ 1-bit tristate buffer                                 : 928
 # FSMs                                                 : 5
 # Xors                                                 : 3
  1-bit xor2                                            : 1
@@ -2297,7 +2344,7 @@ INFO:Xst:3048 - The small RAM <Mram_RAM> will be implemented on LUTs in order to
     -----------------------------------------------------------------------
     | Port B                                                              |
     |     aspect ratio   | 16-word x 32-bit                    |          |
-    |     addrB          | connected to signal <stack_ptr[3]_GND_852_o_add_6_OUT> |          |
+    |     addrB          | connected to signal <stack_ptr[3]_GND_885_o_add_6_OUT> |          |
     |     doB            | connected to internal node          |          |
     -----------------------------------------------------------------------
 Unit <dstack> synthesized (advanced).
@@ -2417,11 +2464,11 @@ Macro Statistics
 # Accumulators                                         : 2
  4-bit up accumulator                                  : 1
  8-bit up accumulator                                  : 1
-# Registers                                            : 688
- Flip-Flops                                            : 688
+# Registers                                            : 689
+ Flip-Flops                                            : 689
 # Comparators                                          : 1
  32-bit comparator equal                               : 1
-# Multiplexers                                         : 153
+# Multiplexers                                         : 152
  1-bit 2-to-1 multiplexer                              : 51
  1-bit 4-to-1 multiplexer                              : 4
  1-bit 64-to-1 multiplexer                             : 1
@@ -2432,7 +2479,7 @@ Macro Statistics
  16-bit 4-to-1 multiplexer                             : 1
  2-bit 2-to-1 multiplexer                              : 9
  2-bit 3-to-1 multiplexer                              : 2
- 3-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 1
  3-bit 4-to-1 multiplexer                              : 1
  32-bit 2-to-1 multiplexer                             : 33
  32-bit 3-to-1 multiplexer                             : 2
@@ -2457,7 +2504,8 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <ack7> (without init value) has a constant value of 0 in block <arbitre>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ack6> (without init value) has a constant value of 0 in block <arbitre>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ack2> (without init value) has a constant value of 0 in block <arbitre>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ack5> (without init value) has a constant value of 0 in block <arbitre>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <wr_adr_28> in Unit <HCU> is equivalent to the following FF/Latch, which will be removed : <write_adr_28> 
 INFO:Xst:2261 - The FF/Latch <kernel_state> in Unit <HCU> is equivalent to the following FF/Latch, which will be removed : <kernel> 
@@ -2583,12 +2631,12 @@ Optimizing FSM <UART_Wrapper/Inst_uart_dispatch/FSM_0> on signal <current_state[
  fin    | 110
 --------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <My_arbitre/FSM_4> on signal <state[1:2]> with one-hot encoding.
+Optimizing FSM <My_arbitre/FSM_4> on signal <state[1:1]> with sequential encoding.
 ---------------------
  State   | Encoding
 ---------------------
- idle    | 01
- int1    | 10
+ idle    | 0
+ int1    | 1
  int2    | unreached
  int3    | unreached
  int4    | unreached
@@ -2748,12 +2796,13 @@ WARNING:Xst:2677 - Node <COUNT_3> of sequential type is unconnected in block <My
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Nexys3v6, actual ratio is 35.
-FlipFlop my_Master/HCU_Master/Ipcode_0 has been replicated 1 time(s)
-FlipFlop my_Master/HCU_Master/Ipcode_1 has been replicated 1 time(s)
-FlipFlop my_Master/HCU_Master/Ipcode_2 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block Nexys3v6, actual ratio is 36.
+FlipFlop my_Master/HCU_Master/Ipcode_0 has been replicated 2 time(s)
+FlipFlop my_Master/HCU_Master/Ipcode_1 has been replicated 2 time(s)
+FlipFlop my_Master/HCU_Master/Ipcode_10 has been replicated 1 time(s)
+FlipFlop my_Master/HCU_Master/Ipcode_2 has been replicated 2 time(s)
 FlipFlop my_Master/HCU_Master/Ipcode_3 has been replicated 1 time(s)
-FlipFlop my_Master/HCU_Master/Ipcode_4 has been replicated 1 time(s)
+FlipFlop my_Master/HCU_Master/Ipcode_4 has been replicated 2 time(s)
 FlipFlop my_Master/HCU_Master/PC_adr_2 has been replicated 3 time(s)
 FlipFlop my_Master/HCU_Master/PC_adr_3 has been replicated 3 time(s)
 FlipFlop my_Master/HCU_Master/PC_adr_4 has been replicated 3 time(s)
@@ -2761,8 +2810,8 @@ FlipFlop my_Master/HCU_Master/PC_adr_5 has been replicated 3 time(s)
 FlipFlop my_Master/HCU_Master/PC_adr_6 has been replicated 3 time(s)
 FlipFlop my_Master/HCU_Master/PC_adr_7 has been replicated 3 time(s)
 FlipFlop my_Master/Mwaitbtn.Inst_IPwaitBt/current_state_FSM_FFd1 has been replicated 1 time(s)
-FlipFlop my_Master/Stack_Master/update_counter/count_out_0 has been replicated 4 time(s)
-FlipFlop my_Master/Stack_Master/update_counter/count_out_1 has been replicated 4 time(s)
+FlipFlop my_Master/Stack_Master/update_counter/count_out_0 has been replicated 3 time(s)
+FlipFlop my_Master/Stack_Master/update_counter/count_out_1 has been replicated 3 time(s)
 
 Final Macro Processing ...
 
@@ -2774,8 +2823,8 @@ Unit <Nexys3v6> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 651
- Flip-Flops                                            : 651
+# Registers                                            : 654
+ Flip-Flops                                            : 654
 # Shift Registers                                      : 1
  2-bit shift register                                  : 1
 
@@ -2800,30 +2849,30 @@ Top Level Output File Name         : Nexys3v6.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4429
+# BELS                             : 4370
 #      AND2                        : 1
 #      AND3                        : 7
 #      GND                         : 5
 #      INV                         : 24
 #      LUT1                        : 111
-#      LUT2                        : 257
-#      LUT3                        : 200
-#      LUT4                        : 715
-#      LUT5                        : 621
-#      LUT6                        : 831
+#      LUT2                        : 278
+#      LUT3                        : 228
+#      LUT4                        : 634
+#      LUT5                        : 539
+#      LUT6                        : 861
 #      MULT_AND                    : 136
-#      MUXCY                       : 944
-#      MUXF7                       : 39
+#      MUXCY                       : 943
+#      MUXF7                       : 65
 #      OR2                         : 4
 #      OR3                         : 1
 #      VCC                         : 2
 #      XORCY                       : 531
-# FlipFlops/Latches                : 652
+# FlipFlops/Latches                : 655
 #      FD                          : 89
 #      FDCE                        : 36
-#      FDE                         : 331
+#      FDE                         : 336
 #      FDE_1                       : 4
-#      FDR                         : 102
+#      FDR                         : 100
 #      FDR_1                       : 40
 #      FDRE                        : 20
 #      FDRE_1                      : 24
@@ -2854,19 +2903,19 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             652  out of  18224     3%  
- Number of Slice LUTs:                 3048  out of   9112    33%  
-    Number used as Logic:              2759  out of   9112    30%  
+ Number of Slice Registers:             655  out of  18224     3%  
+ Number of Slice LUTs:                 2964  out of   9112    32%  
+    Number used as Logic:              2675  out of   9112    29%  
     Number used as Memory:              289  out of   2176    13%  
        Number used as RAM:              288
        Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3118
-   Number with an unused Flip Flop:    2466  out of   3118    79%  
-   Number with an unused LUT:            70  out of   3118     2%  
-   Number of fully used LUT-FF pairs:   582  out of   3118    18%  
-   Number of unique control sets:        37
+ Number of LUT Flip Flop pairs used:   3038
+   Number with an unused Flip Flop:    2383  out of   3038    78%  
+   Number with an unused LUT:            74  out of   3038     2%  
+   Number of fully used LUT-FF pairs:   581  out of   3038    19%  
+   Number of unique control sets:        38
 
 IO Utilization: 
  Number of IOs:                          39
@@ -2898,7 +2947,7 @@ Clock Signal                             | Clock buffer(FF name)                
 -----------------------------------------+----------------------------------------+-------+
 mclk                                     | clk_gen/dcm_sp_inst:CLK0               | 0     |
 mclk                                     | clk_gen/dcm_sp_inst:CLKDV              | 0     |
-clk50                                    | NONE(next_state)                       | 787   |
+clk50                                    | NONE(next_state)                       | 790   |
 clk100                                   | NONE(D7seg_display/XLXI_34/XLXI_1)     | 54    |
 UART_Wrapper/uart_baudClock_inst/baud_clk| NONE(UART_Wrapper/Inst_uart_rx/rx_busy)| 13    |
 -----------------------------------------+----------------------------------------+-------+
@@ -2912,7 +2961,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 10.454ns (Maximum Frequency: 95.661MHz)
+   Minimum period: 11.433ns (Maximum Frequency: 87.465MHz)
    Minimum input arrival time before clock: 1.903ns
    Maximum output required time after clock: 6.249ns
    Maximum combinational path delay: No path found
@@ -2923,33 +2972,34 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk50'
-  Clock period: 10.454ns (frequency: 95.661MHz)
-  Total number of paths / destination ports: 758527887 / 2865
+  Clock period: 11.433ns (frequency: 87.465MHz)
+  Total number of paths / destination ports: 801690731 / 2871
 -------------------------------------------------------------------------
-Delay:               10.454ns (Levels of Logic = 9)
-  Source:            my_Master/Mdelay.Inst_IP_delay/IPdone (FF)
-  Destination:       my_Master/Stack_Master/R2/q_31 (FF)
+Delay:               11.433ns (Levels of Logic = 10)
+  Source:            my_Master/HCU_Master/Ipcode_9 (FF)
+  Destination:       my_Master/Stack_Master/R2/q_30 (FF)
   Source Clock:      clk50 rising
   Destination Clock: clk50 rising
 
-  Data Path: my_Master/Mdelay.Inst_IP_delay/IPdone to my_Master/Stack_Master/R2/q_31
+  Data Path: my_Master/HCU_Master/Ipcode_9 to my_Master/Stack_Master/R2/q_30
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               4   0.447   0.684  my_Master/Mdelay.Inst_IP_delay/IPdone (my_Master/Mdelay.Inst_IP_delay/IPdone)
-     LUT2:I1->O            5   0.205   1.079  my_Master/IPd1 (my_Master/IPd)
-     OR3:I0->O            58   0.203   1.601  my_Master/Stack_Master/XLXI_91 (my_Master/Stack_Master/lastcycle)
-     LUT5:I4->O            4   0.205   0.912  my_Master/Stack_Master/sel_in/control<23>211 (my_Master/Stack_Master/sel_in/N97)
+     FDE:C->Q              6   0.447   0.992  my_Master/HCU_Master/Ipcode_9 (my_Master/HCU_Master/Ipcode_9)
+     LUT4:I0->O            6   0.203   0.745  my_Master/MTic.Inst_IP_Tic/ipcode[10]_GND_918_o_equal_3_o<10>111 (my_Master/N142)
+     LUT6:I5->O            9   0.205   1.194  my_Master/IPd1 (my_Master/IPd)
+     OR3:I0->O            46   0.203   1.491  my_Master/Stack_Master/XLXI_91 (my_Master/Stack_Master/lastcycle)
+     LUT5:I4->O            3   0.205   0.879  my_Master/Stack_Master/sel_in/control<23>211 (my_Master/Stack_Master/sel_in/N97)
      LUT6:I3->O            2   0.205   0.721  my_Master/Stack_Master/sel_in/Madd_adr2_lut<2>1 (my_Master/Stack_Master/sel_in/Madd_adr2_lut<2>)
-     LUT6:I4->O            2   0.203   0.617  my_Master/Stack_Master/sel_in/Madd_adr2_xor<3>121 (my_Master/Stack_Master/sel_in/N38)
-     LUT3:I2->O           14   0.205   0.957  my_Master/Stack_Master/sel_in/Madd_adr2_xor<3>11_1 (my_Master/Stack_Master/sel_in/Madd_adr2_xor<3>11)
-     RAM16X1S:A3->O        3   0.205   0.651  my_Master/Stack_Master/ram2/Mram_ram32 (my_Master/Stack_Master/XLXN_41<31>)
-     LUT6:I5->O            1   0.205   0.808  my_Master/Tbusst<31>_MUXCY_11_SW10 (N604)
-     LUT5:I2->O            1   0.205   0.000  my_Master/Stack_Master/muxR2/Mmux_Y251 (my_Master/Stack_Master/R2in<31>)
-     FDE:D                     0.102          my_Master/Stack_Master/R2/q_31
+     LUT6:I4->O            4   0.203   0.684  my_Master/Stack_Master/sel_in/Madd_adr2_xor<3>121 (my_Master/Stack_Master/sel_in/N38)
+     LUT3:I2->O            8   0.205   0.802  my_Master/Stack_Master/sel_in/Madd_adr2_xor<3>11_1 (my_Master/Stack_Master/sel_in/Madd_adr2_xor<3>11)
+     RAM16X1S:A3->O        2   0.205   0.617  my_Master/Stack_Master/ram2/Mram_ram28 (my_Master/Stack_Master/XLXN_41<27>)
+     LUT6:I5->O            1   0.205   0.684  my_Master/Tbusst<27>_MUXCY_12_SW2 (N565)
+     LUT5:I3->O            1   0.203   0.000  my_Master/Stack_Master/muxR2/Mmux_Y201 (my_Master/Stack_Master/R2in<27>)
+     FDE:D                     0.102          my_Master/Stack_Master/R2/q_27
     ----------------------------------------
-    Total                     10.454ns (2.424ns logic, 8.030ns route)
-                                       (23.2% logic, 76.8% route)
+    Total                     11.433ns (2.625ns logic, 8.808ns route)
+                                       (23.0% logic, 77.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk100'
@@ -3128,21 +3178,21 @@ Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fal
 -----------------------------------------+---------+---------+---------+---------+
 UART_Wrapper/uart_baudClock_inst/baud_clk|    1.263|         |         |         |
 clk100                                   |    1.780|         |         |         |
-clk50                                    |   10.454|    4.198|    4.794|         |
+clk50                                    |   11.433|    4.198|    5.546|         |
 -----------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 25.00 secs
-Total CPU time to Xst completion: 23.89 secs
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 23.24 secs
  
 --> 
 
 
-Total memory usage is 463756 kilobytes
+Total memory usage is 464180 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  168 (   0 filtered)
+Number of warnings :  172 (   0 filtered)
 Number of infos    :  203 (   0 filtered)
 

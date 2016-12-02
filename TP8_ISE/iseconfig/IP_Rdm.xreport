@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-11-25T11:26:48</DateModified>
+  <DateModified>2016-12-02T10:19:32</DateModified>
   <ModuleName>IP_Rdm</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/m1/hembert/AEO/TP8_ISE/iseconfig/IP_Rdm.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/m1/hembert/AEO/TP8_ISE</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/m1/hembert/AEO/TP8_ISE/</ImplementationReportsDirectory>
   <DateInitialized>2016-11-25T08:37:10</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

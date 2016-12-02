@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map M.81d on Fri Nov 25 09:16:19 2016
+// Written by: Map M.81d on Fri Dec 02 08:53:28 2016
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -623,38 +623,41 @@ TIMEGRP clk_gen_clkdv = BEL "next_state" BEL "reset_Homade" BEL
         "UART_Wrapper/Inst_uart_dispatch/buf64_0" BEL
         "UART_Wrapper/Inst_uart_dispatch/buf64e" BEL
         "My_arbitre/state_FSM_FFd1" BEL "My_arbitre/it_homade_0" BEL
-        "my_Master/Mwaitbtn.Inst_IPwaitBt/current_state_FSM_FFd1_1" BEL
+        "my_Master/HCU_Master/Ipcode_10_1" BEL
+        "my_Master/HCU_Master/Ipcode_2_1" BEL
+        "my_Master/HCU_Master/Ipcode_1_1" BEL
+        "my_Master/HCU_Master/Ipcode_0_1" BEL
         "my_Master/Stack_Master/update_counter/count_out_0_1" BEL
         "my_Master/Stack_Master/update_counter/count_out_1_1" BEL
         "my_Master/HCU_Master/Ipcode_4_1" BEL
+        "my_Master/HCU_Master/Ipcode_2_2" BEL
+        "my_Master/Mwaitbtn.Inst_IPwaitBt/current_state_FSM_FFd1_1" BEL
+        "my_Master/HCU_Master/Ipcode_3_1" BEL
         "my_Master/Stack_Master/update_counter/count_out_1_2" BEL
         "my_Master/Stack_Master/update_counter/count_out_1_3" BEL
-        "my_Master/HCU_Master/PC_adr_7_1" BEL
-        "my_Master/HCU_Master/PC_adr_7_2" BEL
-        "my_Master/HCU_Master/PC_adr_7_3" BEL
+        "my_Master/Stack_Master/update_counter/count_out_0_2" BEL
+        "my_Master/Stack_Master/update_counter/count_out_0_3" BEL
         "my_Master/HCU_Master/PC_adr_6_1" BEL
         "my_Master/HCU_Master/PC_adr_6_2" BEL
         "my_Master/HCU_Master/PC_adr_6_3" BEL
         "my_Master/HCU_Master/PC_adr_5_1" BEL
         "my_Master/HCU_Master/PC_adr_5_2" BEL
         "my_Master/HCU_Master/PC_adr_5_3" BEL
+        "my_Master/HCU_Master/PC_adr_7_1" BEL
+        "my_Master/HCU_Master/PC_adr_7_2" BEL
+        "my_Master/HCU_Master/PC_adr_7_3" BEL
         "my_Master/HCU_Master/PC_adr_4_1" BEL
         "my_Master/HCU_Master/PC_adr_4_2" BEL
         "my_Master/HCU_Master/PC_adr_4_3" BEL
         "my_Master/HCU_Master/PC_adr_3_1" BEL
         "my_Master/HCU_Master/PC_adr_3_2" BEL
         "my_Master/HCU_Master/PC_adr_3_3" BEL
-        "my_Master/HCU_Master/Ipcode_0_1" BEL
+        "my_Master/HCU_Master/Ipcode_0_2" BEL
+        "my_Master/HCU_Master/Ipcode_4_2" BEL
+        "my_Master/HCU_Master/Ipcode_1_2" BEL
         "my_Master/HCU_Master/PC_adr_2_1" BEL
         "my_Master/HCU_Master/PC_adr_2_2" BEL
         "my_Master/HCU_Master/PC_adr_2_3" BEL
-        "my_Master/Stack_Master/update_counter/count_out_1_4" BEL
-        "my_Master/HCU_Master/Ipcode_2_1" BEL
-        "my_Master/Stack_Master/update_counter/count_out_0_2" BEL
-        "my_Master/Stack_Master/update_counter/count_out_0_3" BEL
-        "my_Master/HCU_Master/Ipcode_1_1" BEL
-        "my_Master/Stack_Master/update_counter/count_out_0_4" BEL
-        "my_Master/HCU_Master/Ipcode_3_1" BEL
         "my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM61/SP"
         BEL
         "my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM61/DP"

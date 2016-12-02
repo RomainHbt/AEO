@@ -1,0 +1,2 @@
+vhdl isim_temp "fibogen.vhd"
+vhdl isim_temp "IP_fibo.vhd"

@@ -27,6 +27,7 @@ Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/IPcode.vhd" into library work
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/homade_opcodes.vhd" into library work
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/dstack.vhd" into library work
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/constant32.vhd" into library work
+Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/../TP8_ISE/random.vhd" into library work
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/slavedual_prom.vhd" into library work
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/reset_mem.vhf" into library work
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/QD.vhd" into library work
@@ -46,6 +47,8 @@ Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/Hstack.vhf" into library work
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/Hcontrolunit.vhd" into library work
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/Funit_lib.vhd" into library work
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/add_gen.vhd" into library work
+Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/../TP8_ISE/IP_Rdm.vhd" into library work
+Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/../TP10/IP_fibo.vhd" into library work
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/reg.vhd" into library work
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/netring_master.vhf" into library work
 Parsing VHDL file "/home/m1/hembert/AEO/Nexys3V6/netring.vhf" into library work
@@ -72,8 +75,8 @@ WARNING:HDLCompiler:746 - "/home/m1/hembert/AEO/Nexys3V6/Hmaster.vhd" Line 488: 
 WARNING:HDLCompiler:746 - "/home/m1/hembert/AEO/Nexys3V6/Hmaster.vhd" Line 514: Range is empty (null range)
 WARNING:HDLCompiler:746 - "/home/m1/hembert/AEO/Nexys3V6/Hmaster.vhd" Line 540: Range is empty (null range)
 Completed static elaboration
-Fuse Memory Usage: 94248 KB
-Fuse CPU Usage: 260 ms
+Fuse Memory Usage: 94348 KB
+Fuse CPU Usage: 270 ms
 Using precompiled package standard from library std
 Using precompiled package textio from library std
 Using precompiled package std_logic_1164 from library ieee
@@ -115,6 +118,7 @@ Compiling architecture and3_v of entity and3 [and3_default]
 Compiling architecture behavioral of entity pulse [pulse_default]
 Compiling architecture reg1c of entity reg1c [\reg1c(5)\]
 Compiling architecture fsm of entity ip_waitbt [\IP_waitbt(('1','0','0','0','0',...]
+Compiling architecture dummyfibo of entity ip_fibo [\IP_fibo(('1','0','0','0','0','0...]
 Compiling architecture fsm of entity ip_delay [\IP_delay(('1','0','0','0','0','...]
 Compiling package xbip_addsub_v2_0_comp
 Compiling package bip_utils_pkg_v2_0
@@ -137,6 +141,8 @@ Compiling architecture behavioral of entity dstack [dstack_default]
 Compiling architecture behavioral of entity ip_datastack [\IP_datastack(('0','0','0','0','...]
 Compiling architecture reg1c of entity reg1c [\reg1c(32)\]
 Compiling architecture behavioral of entity ip_tic [\IP_Tic(('0','0','0','0','0','0'...]
+Compiling architecture behavioral of entity random [\random(32)\]
+Compiling architecture behavioral of entity ip_rdm [\IP_Rdm(('0','0','0','0','0','0'...]
 Compiling package mult_gen_pkg_v11_2
 Compiling architecture behavioral of entity mult_gen_v11_2 [\mult_gen_v11_2(0,0,"spartan6",1...]
 Compiling architecture multiply_a of entity multiply [multiply_default]
@@ -144,9 +150,9 @@ Compiling architecture behavioral of entity ip_mul16 [\IP_mul16(('0','0','0','0'
 Compiling architecture behavioral of entity hmaster [hmaster_default]
 Compiling architecture behavior of entity masterbench
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 120 VHDL Units
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 126 VHDL Units
 Built simulation executable /home/m1/hembert/AEO/Nexys3V6/masterbench_isim_beh.exe
-Fuse Memory Usage: 682476 KB
-Fuse CPU Usage: 550 ms
+Fuse Memory Usage: 682620 KB
+Fuse CPU Usage: 540 ms
 GCC CPU Usage: 3840 ms

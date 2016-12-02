@@ -26,7 +26,7 @@
 <msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/m1/hembert/AEO/Nexys3V6/uart_dispatch.vhd" Line 182: <arg fmt="%s" index="1">buf64</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="871" delta="old" >"/home/m1/hembert/AEO/Nexys3V6/Hmaster.vhd" Line 75: Using initial value <arg fmt="%s" index="1">&apos;0&apos;</arg> for <arg fmt="%s" index="2">ipdft</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/m1/hembert/AEO/Nexys3V6/Hmaster.vhd" Line 75: Using initial value <arg fmt="%s" index="1">&apos;0&apos;</arg> for <arg fmt="%s" index="2">ipdc32</arg> since it is never assigned
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="746" delta="old" >"/home/m1/hembert/AEO/Nexys3V6/Hmaster.vhd" Line 90: Range is empty (null range)
@@ -65,7 +65,7 @@
 <msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/m1/hembert/AEO/Nexys3V6/IPWait.vhd" Line 77: <arg fmt="%s" index="1">tin</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="new" >"/home/m1/hembert/AEO/Nexys3V6/../TP8_ISE/random.vhd" Line 56: <arg fmt="%s" index="1">sortie</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/m1/hembert/AEO/Nexys3V6/../TP8_ISE/random.vhd" Line 56: <arg fmt="%s" index="1">sortie</arg> should be on the sensitivity list of the process
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/m1/hembert/AEO/Nexys3V6/Hmaster.vhd" Line 73: Net &lt;<arg fmt="%s" index="1">ort</arg>&gt; does not have a driver.
@@ -150,6 +150,15 @@
 </msg>
 
 <msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">next_wait</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">etat</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Tin&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Tin&lt;31:16&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -561,10 +570,13 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inslocal_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">HCU</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ack7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">arbitre</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ack6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">arbitre</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ack5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">arbitre</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ack2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">arbitre</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ack5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">arbitre</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wr_adr_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HCU</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;write_adr_28&gt; </arg>
@@ -882,7 +894,7 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">it_homade_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">arbitre</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2040" delta="new" >Unit <arg fmt="%s" index="1">HMaster</arg>: <arg fmt="%d" index="2">32</arg> multi-source signals are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+<msg type="warning" file="Xst" num="2040" delta="old" >Unit <arg fmt="%s" index="1">HMaster</arg>: <arg fmt="%d" index="2">32</arg> multi-source signals are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
 <msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">IP_waitbt</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 

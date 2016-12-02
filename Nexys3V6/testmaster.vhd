@@ -59,18 +59,15 @@ signal master : std_logic :='1';
   type rom_array is array (natural range <>) of std_logic_vector ( 63 downto 0 ) ;
 constant  rom : rom_array := ( 
  --  master code 
- x"0c00_0000_000c_ffff", -- 0x0000
- x"8804_a402_8804_a402", -- 0x0004
- x"c820_a002_03fa_1400", -- 0x0008
- x"1000_0000_0004_1c00", -- 0x000c
- x"ffff_ffff_ffff_ffff", -- 0x0010
- x"1c00_ffff_ffff_ffff", -- 0x0014
- x"ffff_ffff_ffff_ffff", -- 0x0018
+ x"0C00_0000_000C_FFFF", -- 0x0000
+ x"2001_8C03_8003_c820", -- 0x0004
+ x"8003_1400_FFFF_FFFF", -- 0x0008
+ x"1000_0000_0004_1C00", -- 0x000c
+ x"FFFF_FFFF_FFFF_FFFF", -- 0x0010
  --  slave code 
  x"1c00_ffff_ffff_ffff", -- 0x0000
  x"ffff_ffff_ffff_ffff"  -- 0x0004
 );
-
 
 
 

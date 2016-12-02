@@ -10,7 +10,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.52.76.2 $
-Mapped Date    : Fri Nov 25 09:16:03 2016
+Mapped Date    : Fri Dec  2 08:53:12 2016
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:54 - 'xc6slx16' is a WebPack part.
@@ -29,46 +29,46 @@ Total REAL time at the beginning of Placer: 7 secs
 Total CPU  time at the beginning of Placer: 5 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:46070fd) REAL time: 8 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:8dcc6aec) REAL time: 8 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:46070fd) REAL time: 8 secs 
+Phase 2.7  Design Feasibility Check (Checksum:8dcc6aec) REAL time: 8 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:46070fd) REAL time: 8 secs 
+Phase 3.31  Local Placement Optimization (Checksum:8dcc6aec) REAL time: 8 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
-Phase 4.2  Initial Placement for Architecture Specific Features (Checksum:5cffc3fa) REAL time: 10 secs 
+Phase 4.2  Initial Placement for Architecture Specific Features (Checksum:dc029f8f) REAL time: 10 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:5cffc3fa) REAL time: 10 secs 
+Phase 5.36  Local Placement Optimization (Checksum:dc029f8f) REAL time: 10 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:5cffc3fa) REAL time: 10 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:dc029f8f) REAL time: 10 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:5cffc3fa) REAL time: 10 secs 
+Phase 7.3  Local Placement Optimization (Checksum:dc029f8f) REAL time: 10 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:5cffc3fa) REAL time: 10 secs 
+Phase 8.5  Local Placement Optimization (Checksum:dc029f8f) REAL time: 10 secs 
 
 Phase 9.8  Global Placement
-...............................................................
-...........................................
-Phase 9.8  Global Placement (Checksum:22e0d0f3) REAL time: 14 secs 
+.......................................
+.......................................
+Phase 9.8  Global Placement (Checksum:5be12569) REAL time: 14 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:22e0d0f3) REAL time: 14 secs 
+Phase 10.5  Local Placement Optimization (Checksum:5be12569) REAL time: 14 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:f4b09b13) REAL time: 15 secs 
+Phase 11.18  Placement Optimization (Checksum:4bda9239) REAL time: 15 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:f4b09b13) REAL time: 15 secs 
+Phase 12.5  Local Placement Optimization (Checksum:4bda9239) REAL time: 15 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:aa2d1bb9) REAL time: 15 secs 
+Phase 13.34  Placement Validation (Checksum:30a6d3aa) REAL time: 15 secs 
 
 Total REAL time to Placer completion: 15 secs 
 Total CPU  time to Placer completion: 13 secs 
@@ -84,20 +84,20 @@ WARNING:PhysDesignRules:367 - The signal <PS2_Data_IBUF> is incomplete. The sign
    design.
 WARNING:PhysDesignRules:367 - The signal <PS2_Clk_IBUF> is incomplete. The signal does not drive any load pins in the
    design.
-WARNING:PhysDesignRules:367 - The signal <my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM5_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM4_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM5_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM3_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM1_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM2_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <my_Master/HCU_Master/Inst_returnstack/Mram_RAM1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <my_Master/HCU_Master/Inst_returnstack/Mram_RAM2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <my_Master/HCU_Master/Inst_returnstack/Mram_RAM1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
 
 Design Summary
 --------------
@@ -106,44 +106,44 @@ Design Summary:
 Number of errors:      0
 Number of warnings:   12
 Slice Logic Utilization:
-  Number of Slice Registers:                   645 out of  18,224    3%
-    Number used as Flip Flops:                 644
+  Number of Slice Registers:                   648 out of  18,224    3%
+    Number used as Flip Flops:                 647
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                1
-  Number of Slice LUTs:                      2,828 out of   9,112   31%
-    Number used as logic:                    2,582 out of   9,112   28%
-      Number using O6 output only:           1,773
-      Number using O5 output only:              95
-      Number using O5 and O6:                  714
+  Number of Slice LUTs:                      2,743 out of   9,112   30%
+    Number used as logic:                    2,483 out of   9,112   27%
+      Number using O6 output only:           1,713
+      Number using O5 output only:              92
+      Number using O5 and O6:                  678
       Number used as ROM:                        0
-    Number used as Memory:                     227 out of   2,176   10%
+    Number used as Memory:                     237 out of   2,176   10%
       Number used as Dual Port RAM:            158
         Number using O6 output only:           132
         Number using O5 output only:             0
         Number using O5 and O6:                 26
-      Number used as Single Port RAM:           68
-        Number using O6 output only:             4
-        Number using O5 output only:             4
-        Number using O5 and O6:                 60
+      Number used as Single Port RAM:           78
+        Number using O6 output only:            27
+        Number using O5 output only:             1
+        Number using O5 and O6:                 50
       Number used as Shift Register:             1
         Number using O6 output only:             1
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:     19
-      Number with same-slice register load:      6
+    Number used exclusively as route-thrus:     23
+      Number with same-slice register load:     10
       Number with same-slice carry load:        13
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   903 out of   2,278   39%
-  Number of LUT Flip Flop pairs used:        2,880
-    Number with an unused Flip Flop:         2,272 out of   2,880   78%
-    Number with an unused LUT:                  52 out of   2,880    1%
-    Number of fully used LUT-FF pairs:         556 out of   2,880   19%
-    Number of unique control sets:             106
+  Number of occupied Slices:                   871 out of   2,278   38%
+  Number of LUT Flip Flop pairs used:        2,785
+    Number with an unused Flip Flop:         2,178 out of   2,785   78%
+    Number with an unused LUT:                  42 out of   2,785    1%
+    Number of fully used LUT-FF pairs:         565 out of   2,785   20%
+    Number of unique control sets:             107
     Number of slice register sites lost
-      to control set restrictions:             507 out of  18,224    2%
+      to control set restrictions:             512 out of  18,224    2%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -186,11 +186,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.92
+Average Fanout of Non-Clock Nets:                4.96
 
 Peak Memory Usage:  521 MB
 Total REAL time to MAP completion:  17 secs 
-Total CPU time to MAP completion:   15 secs 
+Total CPU time to MAP completion:   14 secs 
 
 Mapping completed.
 See MAP report file "Nexys3v6_map.mrp" for details.
