@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/m1/hembert/AEO/TP10/IP_fibo_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="ip_fibo" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/ip_fibo/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ip_fibo/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ip_fibo/tin" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tin[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ip_fibo/tout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tout[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ip_fibo/ipcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ipcode[10:0]</obj_property>
+      <obj_property name="ObjectShortName">ipcode[10:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ip_fibo/ipdone" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ipdone</obj_property>
+      <obj_property name="ObjectShortName">ipdone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ip_fibo/ipdone_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ipdone_i</obj_property>
+      <obj_property name="ObjectShortName">ipdone_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ip_fibo/tout_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tout_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tout_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ip_fibo/compt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">compt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">compt[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ip_fibo/compt_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">compt_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">compt_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ip_fibo/init_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">init_i</obj_property>
+      <obj_property name="ObjectShortName">init_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ip_fibo/fibobus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fibobus[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fibobus[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ip_fibo/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ip_fibo/next_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ip_fibo/mycode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mycode[10:0]</obj_property>
+      <obj_property name="ObjectShortName">mycode[10:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

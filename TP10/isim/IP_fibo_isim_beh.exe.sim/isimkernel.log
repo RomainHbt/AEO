@@ -2,9 +2,30 @@ Command line:
    IP_fibo_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  53413
+     -socket  49978
 
-Fri Dec  2 12:09:13 2016
+Fri Dec  9 10:18:54 2016
 
 
- Elaboration Time: 0 sec
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 158.044 Meg
+
+ Total Signals          : 19
+ Total Nets             : 226
+ Total Signal Drivers   : 13
+ Total Blocks           : 5
+ Total Primitive Blocks : 4
+ Total Processes        : 5
+ Total Traceable Variables  : 11
+ Total Scalar Nets and Variables : 615
+Total Line Count : 36
+Total Line Count : 36
+Total Line Count : 36
+
+ Total Simulation Time: 0.32 sec
+
+ Current Memory Usage: 232.493 Meg
+
+Fri Dec  9 10:31:33 2016
+

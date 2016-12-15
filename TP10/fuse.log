@@ -7,7 +7,7 @@ Parsing VHDL file "/home/m1/hembert/AEO/TP10/fibogen.vhd" into library work
 Parsing VHDL file "/home/m1/hembert/AEO/TP10/IP_fibo.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 74136 KB
+Fuse Memory Usage: 74140 KB
 Fuse CPU Usage: 60 ms
 Using precompiled package standard from library std
 Using precompiled package std_logic_1164 from library ieee
@@ -19,6 +19,6 @@ Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 7 VHDL Units
 Built simulation executable /home/m1/hembert/AEO/TP10/IP_fibo_isim_beh.exe
-Fuse Memory Usage: 635304 KB
+Fuse Memory Usage: 635308 KB
 Fuse CPU Usage: 70 ms
 GCC CPU Usage: 110 ms

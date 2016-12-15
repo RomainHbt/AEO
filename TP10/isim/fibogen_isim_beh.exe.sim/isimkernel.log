@@ -2,12 +2,12 @@ Command line:
    fibogen_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  38888
+     -socket  40018
 
-Fri Dec  2 11:03:52 2016
+Fri Dec  9 10:18:44 2016
 
 
- Elaboration Time: 0 sec
+ Elaboration Time: 0.01 sec
 
  Current Memory Usage: 157.909 Meg
 
@@ -20,11 +20,10 @@ Fri Dec  2 11:03:52 2016
  Total Traceable Variables  : 10
  Total Scalar Nets and Variables : 476
 Total Line Count : 7
-Total Line Count : 7
 
- Total Simulation Time: 0.05 sec
+ Total Simulation Time: 0.01 sec
 
  Current Memory Usage: 232.358 Meg
 
-Fri Dec  2 12:09:10 2016
+Fri Dec  9 10:18:50 2016
 

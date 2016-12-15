@@ -56,8 +56,8 @@ end HMaster;
 architecture Behavioral of HMaster is
 
 ----- salve
-constant NX_SLAVE : integer := 0;
-constant NY_SLAVE : integer := 0;
+constant NX_SLAVE : integer := 2;
+constant NY_SLAVE : integer := 1;
 
 constant NBSLAVE : integer := NX_SLAVE * NY_SLAVE;
 --==================================================================
@@ -260,13 +260,13 @@ COMPONENT IP_actif
 		);
 	END COMPONENT;
 	
-COMPONENT IP_Led
-	GENERIC (Mycode : std_logic_vector (10 downto 0));
-	PORT(
-		IPcode : IN std_logic_vector(10 downto 0);          
-		BusLedld : OUT std_logic
-		);
-	END COMPONENT;
+--COMPONENT IP_Led
+--	GENERIC (Mycode : std_logic_vector (10 downto 0));
+--	PORT(
+--		IPcode : IN std_logic_vector(10 downto 0);          
+--		BusLedld : OUT std_logic
+--		);
+--	END COMPONENT;
 	
 COMPONENT	IP_switch 
 	GENERIC (Mycode : std_logic_vector (10 downto 0));
@@ -276,15 +276,15 @@ COMPONENT	IP_switch
 		Tout : out  STD_LOGIC_VECTOR (31 downto 0));
 	END COMPONENT;
 
-COMPONENT IP_delay
-	GENERIC (Mycode : std_logic_vector (10 downto 0));
-	PORT(
-		clk : in STD_LOGIC;
-		IPcode : IN std_logic_vector(10 downto 0);
-		Tin : IN std_logic_vector (31 downto 0);          
-		IPdone : OUT std_logic
-		);
-	END COMPONENT;
+--COMPONENT IP_delay
+--	GENERIC (Mycode : std_logic_vector (10 downto 0));
+--	PORT(
+--		clk : in STD_LOGIC;
+--		IPcode : IN std_logic_vector(10 downto 0);
+--		Tin : IN std_logic_vector (31 downto 0);          
+--		IPdone : OUT std_logic
+--		);
+--	END COMPONENT;
 	
 --COMPONENT IP_ram
 --	GENERIC (Mycode : std_logic_vector(9 downto 0);
@@ -322,17 +322,17 @@ COMPONENT IP_waitBt
 		);
 	END COMPONENT;	
 	
-COMPONENT IP_fibo
-	GENERIC (Mycode : std_logic_vector (10 downto 0));
-	PORT(
-		Tin : IN std_logic_vector(31 downto 0);
-		clk : IN std_logic;
-		reset : in std_logic;
-		IPcode : IN std_logic_vector(10 downto 0);
-		Tout : OUT std_logic_vector(31 downto 0);		
-		IPdone : out std_logic
-		);
-	END COMPONENT;	
+--COMPONENT IP_fibo
+--	GENERIC (Mycode : std_logic_vector (10 downto 0));
+--	PORT(
+--		Tin : IN std_logic_vector(31 downto 0);
+--		clk : IN std_logic;
+--		reset : in std_logic;
+--		IPcode : IN std_logic_vector(10 downto 0);
+--		Tout : OUT std_logic_vector(31 downto 0);		
+--		IPdone : out std_logic
+--		);
+--	END COMPONENT;	
 
 COMPONENT IP_Funit
 	GENERIC (Mycode : std_logic_vector (5 downto 0));
@@ -371,14 +371,14 @@ COMPONENT IP_identity
 		);
 	END COMPONENT;
 
-COMPONENT IP_DataStack
-	GENERIC (Mycode : std_logic_vector (9 downto 0));
-	PORT(
-		Tin : IN std_logic_vector(31 downto 0);
-		IPcode : IN std_logic_vector(10 downto 0);          
-		Tout : OUT std_logic_vector(31 downto 0);
-		clk, clr : std_logic		);
-	END COMPONENT;
+--COMPONENT IP_DataStack
+--	GENERIC (Mycode : std_logic_vector (9 downto 0));
+--	PORT(
+--		Tin : IN std_logic_vector(31 downto 0);
+--		IPcode : IN std_logic_vector(10 downto 0);          
+--		Tout : OUT std_logic_vector(31 downto 0);
+--		clk, clr : std_logic		);
+--	END COMPONENT;
 	
 
 COMPONENT IP_Tic
@@ -413,14 +413,14 @@ COMPONENT IP_MEcom
 		);
 	END COMPONENT;
 	
-COMPONENT IP_Rdm
-	GENERIC (Mycode : std_logic_vector (10 downto 0));
-	PORT(
-		clk , reset: IN std_logic;
-		IPcode : IN std_logic_vector(10 downto 0);          
-		Tout : OUT std_logic_vector(31 downto 0)
-		);
-	END COMPONENT;
+--COMPONENT IP_Rdm
+--	GENERIC (Mycode : std_logic_vector (10 downto 0));
+--	PORT(
+--		clk , reset: IN std_logic;
+--		IPcode : IN std_logic_vector(10 downto 0);          
+--		Tout : OUT std_logic_vector(31 downto 0)
+--		);
+--	END COMPONENT;
 	
 --COMPONENT IP_muladd
 --	GENERIC (Mycode : std_logic_vector (10 downto 0));
@@ -665,12 +665,12 @@ BufSwitch_reg: reg0c
 --  IP insatanciation here
 --
 Mled : if genM_led = '1' generate
-Inst_IP_Led: IP_Led
-		generic map (Mycode =>IPLed)
-		PORT MAP(
-		IPcode => Icode,
-		BusLedld =>BusLdld
-	);
+--Inst_IP_Led: IP_Led
+--		generic map (Mycode =>IPLed)
+--		PORT MAP(
+--		IPcode => Icode,
+--		BusLedld =>BusLdld
+--	);
 end generate Mled;
 
 Mswitch : if genM_switch = '1' generate
@@ -707,27 +707,27 @@ Inst_IPwaitBt: IP_waitBt
 end generate Mwaitbtn;
 	
 Mfibo : if genM_fibo = '1' generate
-	Inst_IPfibo: IP_fibo
-		generic map (Mycode =>IPfibo)
-		PORT MAP(
-		Tin => Tbusld( 31 downto 0),
-		clk => clock,
-		reset => reset,
-		IPcode => Icode,
-		Tout => Tbusst,
-		IPdone => IPdft
-	);	
+--	Inst_IPfibo: IP_fibo
+--		generic map (Mycode =>IPfibo)
+--		PORT MAP(
+--		Tin => Tbusld( 31 downto 0),
+--		clk => clock,
+--		reset => reset,
+--		IPcode => Icode,
+--		Tout => Tbusst,
+--		IPdone => IPdft
+--	);	
 end generate Mfibo;
 
 Mdelay : if genM_delay = '1' generate
-	Inst_IP_delay: IP_delay 
-		generic map (Mycode =>IPdelay)
-		PORT MAP(
-		Tin => Tbusld,
-		IPcode => Icode,
-		clk => clock,
-		IPdone => IPdwt
-	);
+--	Inst_IP_delay: IP_delay 
+--		generic map (Mycode =>IPdelay)
+--		PORT MAP(
+--		Tin => Tbusld,
+--		IPcode => Icode,
+--		clk => clock,
+--		IPdone => IPdwt
+--	);
 end generate Mdelay;
 
 --MRAM : if genM_RAM = '1' generate
@@ -795,15 +795,15 @@ Inst_IPidentity: IP_identity
 end generate Midentity;
 	
 Mdatastack : if genM_datastack = '1' generate
-Inst_IPdataStack: IP_dataStack
-		generic map (Mycode =>IPDataStack)
-		PORT MAP(
-		Tin => Tbusld,
-		clk=> clock,
-		clr=>reset, 
-		IPcode => Icode,
-		Tout => Tbusst
-	);
+--Inst_IPdataStack: IP_dataStack
+--		generic map (Mycode =>IPDataStack)
+--		PORT MAP(
+--		Tin => Tbusld,
+--		clk=> clock,
+--		clr=>reset, 
+--		IPcode => Icode,
+--		Tout => Tbusst
+--	);
 end generate Mdatastack;
 
 	
@@ -880,14 +880,14 @@ slv: IF NBSLAVE > 0 generate
 end generate slv;
 
 Mrdm : if genM_rdm = '1' generate
-Inst_IP_Rdm: IP_Rdm 
-		generic map (Mycode =>IPRdm)
-		PORT MAP(
-		clk => clock,
-		reset => reset,
-		IPcode => Icode,
-		Tout => Tbusst
-	);
+--Inst_IP_Rdm: IP_Rdm 
+--		generic map (Mycode =>IPRdm)
+--		PORT MAP(
+--		clk => clock,
+--		reset => reset,
+--		IPcode => Icode,
+--		Tout => Tbusst
+--	);
 end generate Mrdm;
 	
 --Mmuladd : if genM_muladd = '1' generate

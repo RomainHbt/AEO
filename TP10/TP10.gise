@@ -54,17 +54,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1480676952" xil_pn:in_ck="534587540653514738" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1480676952">
+    <transform xil_pn:end_ts="1481275120" xil_pn:in_ck="534587540653514738" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1481275120">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="IP_fibo.vhd"/>
       <outfile xil_pn:name="fibogen.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1480676879" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1014519751886649526" xil_pn:start_ts="1480676879">
+    <transform xil_pn:end_ts="1481275133" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1014519751886649526" xil_pn:start_ts="1481275133">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1480676879" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5235603534370279480" xil_pn:start_ts="1480676879">
+    <transform xil_pn:end_ts="1481275133" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5235603534370279480" xil_pn:start_ts="1481275133">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -72,15 +72,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1480676952" xil_pn:in_ck="534587540653514738" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1480676952">
+    <transform xil_pn:end_ts="1481275123" xil_pn:in_ck="534587540653514738" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1481275123">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="IP_fibo.vhd"/>
       <outfile xil_pn:name="fibogen.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1480676953" xil_pn:in_ck="534587540653514738" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8623829631598109464" xil_pn:start_ts="1480676952">
+    <transform xil_pn:end_ts="1481275133" xil_pn:in_ck="534587540653514738" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8623829631598109464" xil_pn:start_ts="1481275133">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="IP_fibo_beh.prj"/>
       <outfile xil_pn:name="IP_fibo_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -88,9 +90,11 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1480676953" xil_pn:in_ck="-4117840140762951568" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2182222658708005157" xil_pn:start_ts="1480676953">
+    <transform xil_pn:end_ts="1481275134" xil_pn:in_ck="-4117840140762951568" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2182222658708005157" xil_pn:start_ts="1481275133">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="IP_fibo_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
@@ -129,6 +133,7 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="fibogen.lso"/>

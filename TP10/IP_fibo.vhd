@@ -44,8 +44,8 @@ architecture dummyfibo of IP_fibo is
 signal IPdone_i : STD_LOGIC;
 signal Tout_i : STD_LOGIC_VECTOR (31 downto 0);
 
-signal compt : STD_LOGIC_VECTOR (7 downto 0);
-signal compt_i : STD_LOGIC_VECTOR (7 downto 0);
+signal compt : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
+signal compt_i : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
 
 signal init_i : STD_LOGIC;
 signal fibobus : STD_LOGIC_VECTOR (31 downto 0);
@@ -78,13 +78,16 @@ begin
          else
             state <= next_state;
             Tout <= Tout_i;
+				compt <= compt_i;
+				IPdone <= IPdone_i;
          -- assign other outputs to internal signals
          end if;        
       end if;
    end process;
  
    --MOORE State-Machine - Outputs based on state only
-   OUTPUT_DECODE: process (state)
+   OUTPUT_DECODE: process (state, compt)
+	variable res_sous: STD_LOGIC_VECTOR (7 downto 0):= "00000000";
    begin
       --insert statements to decode internal output signals
       --below is simple example
@@ -94,13 +97,13 @@ begin
       end if;
 		
 		if state = starting then
-			if compt = 0 then
-				compt_i <= X"05";
-				init_i <= '0';
+			if compt_i = 0 then
+				compt_i <= Tin(7 downto 0);
 			else
-				compt_i <= compt_i - 1;
-				compt <= compt_i;
+				res_sous := compt_i - 1;
+				compt_i <= res_sous;
 			end if;
+			init_i <= '0';
       end if;
 		
 		if state = idle then
@@ -119,6 +122,7 @@ begin
          when idle =>
             if Ipcode = mycode then
                next_state <= starting;
+					init_i <= '1';
             end if;
          when starting =>
             if compt_i = X"00" then

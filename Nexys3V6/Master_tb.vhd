@@ -61,16 +61,25 @@ signal rx_out:  std_logic;
 --  put your program here!!!!!!
 --
 type rom_array is array (natural range <>) of std_logic_vector ( 63 downto 0 ) ;
-constant  rom : rom_array := ( 
- --  master code 
- x"0C00_0000_000C_FFFF", -- 0x0000
- x"2001_8C03_8003_c820", -- 0x0004
- x"8003_1400_FFFF_FFFF", -- 0x0008
- x"1000_0000_0004_1C00", -- 0x000c
- x"FFFF_FFFF_FFFF_FFFF", -- 0x0010
- --  slave code 
- x"1c00_ffff_ffff_ffff", -- 0x0000
- x"ffff_ffff_ffff_ffff"  -- 0x0004
+constant  rom : rom_array := (
+--  Master code
+
+ x"0c00_0000_001c_ffff", -- 0
+ x"a002_8000_8000_1400", -- 4
+ x"2010_a013_81f8_81f9", -- 8
+ x"4001_6000_4002_6000", -- c
+ x"8812_81fa_ffff_ffff", -- 10
+ x"1000_0000_0004_8812", -- 14
+ x"1000_0000_0004_1400", -- 18
+ x"1000_0000_0008_1c00", -- 1c
+ x"ffff_ffff_ffff_ffff", -- 20
+--  Slave code
+ x"1000_0000_000c_1c00", -- 0
+ x"8a00_1c00_8000_1c00", -- 4
+ x"8a02_c820_a201_1c00", -- 8
+ x"1400_ffff_ffff_ffff", -- c
+ x"ffff_ffff_ffff_ffff"  -- 10
+
 );
 
 --

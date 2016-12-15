@@ -1,7 +1,7 @@
 Release 12.4 par M.81d (lin64)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
-a16p21::  Fri Dec 02 08:53:30 2016
+a16p21::  Fri Dec 09 10:56:41 2016
 
 par -w -intstyle ise -ol high -mt off Nexys3v6_map.ncd Nexys3v6.ncd
 Nexys3v6.pcf 
@@ -28,41 +28,38 @@ Device speed data version:  "PRODUCTION 1.15 2010-12-02".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   648 out of  18,224    3%
-    Number used as Flip Flops:                 647
+  Number of Slice Registers:                 1,084 out of  18,224    5%
+    Number used as Flip Flops:               1,081
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
-    Number used as AND/OR logics:                1
-  Number of Slice LUTs:                      2,743 out of   9,112   30%
-    Number used as logic:                    2,483 out of   9,112   27%
-      Number using O6 output only:           1,713
-      Number using O5 output only:              92
-      Number using O5 and O6:                  678
+    Number used as AND/OR logics:                3
+  Number of Slice LUTs:                      6,358 out of   9,112   69%
+    Number used as logic:                    5,788 out of   9,112   63%
+      Number using O6 output only:           3,679
+      Number using O5 output only:             270
+      Number using O5 and O6:                1,839
       Number used as ROM:                        0
-    Number used as Memory:                     237 out of   2,176   10%
-      Number used as Dual Port RAM:            158
-        Number using O6 output only:           132
+    Number used as Memory:                     532 out of   2,176   24%
+      Number used as Dual Port RAM:            340
+        Number using O6 output only:           322
         Number using O5 output only:             0
-        Number using O5 and O6:                 26
-      Number used as Single Port RAM:           78
-        Number using O6 output only:            27
-        Number using O5 output only:             1
-        Number using O5 and O6:                 50
-      Number used as Shift Register:             1
-        Number using O6 output only:             1
+        Number using O5 and O6:                 18
+      Number used as Single Port RAM:          192
+        Number using O6 output only:             0
         Number using O5 output only:             0
-        Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:     23
-      Number with same-slice register load:     10
-      Number with same-slice carry load:        13
+        Number using O5 and O6:                192
+      Number used as Shift Register:             0
+    Number used exclusively as route-thrus:     38
+      Number with same-slice register load:      4
+      Number with same-slice carry load:        34
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   871 out of   2,278   38%
-  Number of LUT Flip Flop pairs used:        2,785
-    Number with an unused Flip Flop:         2,178 out of   2,785   78%
-    Number with an unused LUT:                  42 out of   2,785    1%
-    Number of fully used LUT-FF pairs:         565 out of   2,785   20%
+  Number of occupied Slices:                 1,943 out of   2,278   85%
+  Number of LUT Flip Flop pairs used:        6,377
+    Number with an unused Flip Flop:         5,515 out of   6,377   86%
+    Number with an unused LUT:                  19 out of   6,377    1%
+    Number of fully used LUT-FF pairs:         843 out of   6,377   13%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -75,10 +72,11 @@ Slice Logic Distribution:
 IO Utilization:
   Number of bonded IOBs:                        39 out of     232   16%
     Number of LOCed IOBs:                       39 out of      39  100%
+    IOB Flip Flops:                             14
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
-  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of RAMB8BWERs:                         32 out of      64   50%
   Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
     Number used as BUFIO2s:                      1
     Number used as BUFIO2_2CLKs:                 0
@@ -91,7 +89,9 @@ Specific Feature Utilization:
   Number of DCM/DCM_CLKGENs:                     1 out of       4   25%
     Number used as DCMs:                         1
     Number used as DCM_CLKGENs:                  0
-  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of ILOGIC2/ISERDES2s:                  14 out of     248    5%
+    Number used as ILOGIC2s:                    14
+    Number used as ISERDES2s:                    0
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
   Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
   Number of BSCANs:                              0 out of       4    0%
@@ -111,54 +111,52 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 3 secs 
-Finished initial Timing Analysis.  REAL time: 3 secs 
+Starting initial Timing Analysis.  REAL time: 5 secs 
+Finished initial Timing Analysis.  REAL time: 5 secs 
 
 WARNING:Par:288 - The signal fix_gps_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal pps_gps_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal rx_GPS_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal PS2_Data_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal PS2_Clk_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM4_RAMD_D1_O has no load.  PAR will not attempt to
-   route this signal.
-WARNING:Par:288 - The signal my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM5_RAMD_D1_O has no load.  PAR will not attempt to
-   route this signal.
-WARNING:Par:288 - The signal my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM3_RAMD_D1_O has no load.  PAR will not attempt to
-   route this signal.
-WARNING:Par:288 - The signal my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM1_RAMD_D1_O has no load.  PAR will not attempt to
-   route this signal.
-WARNING:Par:288 - The signal my_Master/HCU_Master/Inst_returnstack/Mram_RAM2_RAMD_D1_O has no load.  PAR will not attempt to route this
-   signal.
 WARNING:Par:288 - The signal my_Master/HCU_Master/Inst_returnstack/Mram_RAM1_RAMD_D1_O has no load.  PAR will not attempt to route this
    signal.
-WARNING:Par:288 - The signal my_Master/Mdatastack.Inst_IPdataStack/Inst_datastack/Mram_RAM2_RAMD_D1_O has no load.  PAR will not attempt to
-   route this signal.
+WARNING:Par:288 - The signal my_Master/HCU_Master/Inst_returnstack/Mram_RAM2_RAMD_D1_O has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal my_Master/Xslaves[0].Yslaves[0].One_salve/HCU_Slave/Inst_returnstack/Mram_RAM2_RAMD_D1_O has no load.  PAR will
+   not attempt to route this signal.
+WARNING:Par:288 - The signal my_Master/Xslaves[0].Yslaves[0].One_salve/HCU_Slave/Inst_returnstack/Mram_RAM1_RAMD_D1_O has no load.  PAR will
+   not attempt to route this signal.
+WARNING:Par:288 - The signal my_Master/Xslaves[1].Yslaves[0].One_salve/HCU_Slave/Inst_returnstack/Mram_RAM2_RAMD_D1_O has no load.  PAR will
+   not attempt to route this signal.
+WARNING:Par:288 - The signal my_Master/Xslaves[1].Yslaves[0].One_salve/HCU_Slave/Inst_returnstack/Mram_RAM1_RAMD_D1_O has no load.  PAR will
+   not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 14936 unrouted;      REAL time: 4 secs 
+Phase  1  : 35704 unrouted;      REAL time: 6 secs 
 
-Phase  2  : 13482 unrouted;      REAL time: 4 secs 
+Phase  2  : 31537 unrouted;      REAL time: 7 secs 
 
-Phase  3  : 6185 unrouted;      REAL time: 8 secs 
+Phase  3  : 16507 unrouted;      REAL time: 13 secs 
 
-Phase  4  : 6185 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+Phase  4  : 16507 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
 
 Updating file: Nexys3v6.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
-Total REAL time to Router completion: 14 secs 
-Total CPU time to Router completion: 14 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 29 secs 
+Total REAL time to Router completion: 29 secs 
+Total CPU time to Router completion: 30 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -176,13 +174,13 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|               clk50 |  BUFGMUX_X2Y3| No   |  315 |  0.064     |  0.910      |
+|              clk100 | BUFGMUX_X3Y13| No   |   22 |  0.522     |  1.384      |
 +---------------------+--------------+------+------+------------+-------------+
-|              clk100 | BUFGMUX_X3Y13| No   |   18 |  0.056     |  0.907      |
+|               clk50 |  BUFGMUX_X2Y3| No   |  682 |  0.535     |  1.381      |
 +---------------------+--------------+------+------+------------+-------------+
 |UART_Wrapper/uart_ba |              |      |      |            |             |
 |udClock_inst/baud_cl |              |      |      |            |             |
-|                   k |         Local|      |    6 |  0.855     |  1.183      |
+|                   k |         Local|      |    7 |  0.661     |  2.218      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -201,14 +199,14 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_clk_gen_clkdv = PERIOD TIMEGRP "clk_ge | SETUP       |     3.025ns|    14.520ns|       0|           0
-  n_clkdv" TS_clk_pin * 2 HIGH 50%          | HOLD        |     0.080ns|            |       0|           0
+  TS_clk_gen_clkdv = PERIOD TIMEGRP "clk_ge | SETUP       |     0.533ns|    18.934ns|       0|           0
+  n_clkdv" TS_clk_pin * 2 HIGH 50%          | HOLD        |     0.118ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_clk_gen_clk0 = PERIOD TIMEGRP "clk_gen | SETUP       |     2.689ns|     7.311ns|       0|           0
+  _clk0" TS_clk_pin HIGH 50%                | HOLD        |     0.410ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_clk_pin = PERIOD TIMEGRP "clk_pin" 10  | MINLOWPULSE |     4.660ns|     5.340ns|       0|           0
   ns HIGH 50%                               |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_clk_gen_clk0 = PERIOD TIMEGRP "clk_gen | SETUP       |     6.195ns|     3.805ns|       0|           0
-  _clk0" TS_clk_pin HIGH 50%                | HOLD        |     0.420ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -222,9 +220,9 @@ Derived Constraints for TS_clk_pin
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_clk_pin                     |     10.000ns|      5.340ns|      7.260ns|            0|            0|            0|    801666766|
-| TS_clk_gen_clk0               |     10.000ns|      3.805ns|          N/A|            0|            0|          475|            0|
-| TS_clk_gen_clkdv              |     20.000ns|     14.520ns|          N/A|            0|            0|    801666291|            0|
+|TS_clk_pin                     |     10.000ns|      5.340ns|      9.467ns|            0|            0|            0|   2275171514|
+| TS_clk_gen_clk0               |     10.000ns|      7.311ns|          N/A|            0|            0|         1916|            0|
+| TS_clk_gen_clkdv              |     20.000ns|     18.934ns|          N/A|            0|            0|   2275169598|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -234,19 +232,19 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-WARNING:Par:283 - There are 12 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+WARNING:Par:283 - There are 11 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 15 secs 
-Total CPU time to PAR completion: 15 secs 
+Total REAL time to PAR completion: 31 secs 
+Total CPU time to PAR completion: 32 secs 
 
-Peak Memory Usage:  497 MB
+Peak Memory Usage:  555 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
 Timing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 14
+Number of warning messages: 13
 Number of info messages: 0
 
 Writing design to file Nexys3v6.ncd
